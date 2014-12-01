@@ -1349,3 +1349,1823 @@ Processing by CustomersController#index as HTML
   Rendered layouts/_navigation_links.html.erb (0.6ms)
   Rendered layouts/_navigation.html.erb (1.3ms)
 Completed 200 OK in 15ms (Views: 13.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-01 13:19:05 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (23.4ms)
+  Rendered layouts/_navigation_links.html.erb (1.3ms)
+  Rendered layouts/_navigation.html.erb (2.3ms)
+Completed 200 OK in 110ms (Views: 76.4ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-01 13:22:27 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-01 13:22:27 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 13:22:27 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-01 13:22:27 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-01 13:22:27 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 13:22:27 -0300
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-01 13:22:47 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-01 13:22:47 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 13:22:47 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-01 13:22:47 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 13:22:47 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-01 13:22:47 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 13:24:10 -0300
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 13:24:10 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-01 13:24:10 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-01 13:24:10 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-01 13:24:10 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 13:24:10 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 13:25:26 -0300
+Processing by HomeController#index as HTML
+  Rendered layouts/_navigation_links.html.erb (1.5ms)
+  Rendered layouts/_navigation.html.erb (2.5ms)
+  Rendered home/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 13:25:27 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-01 13:25:27 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-01 13:25:27 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-01 13:25:27 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 13:25:27 -0300
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-01 13:25:31 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 29ms (Views: 11.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-01 13:25:49 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 13:25:49 -0300
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-01 13:29:52 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 13:29:52 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-01 13:29:52 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-01 13:29:52 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-01 13:29:52 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 13:29:52 -0300
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-01 13:30:11 -0300
+Processing by Devise::SessionsController#new as HTML
+ERROR: compiling _app_views_devise_sessions_new_html_erb__2074850044517901903_69899218219540 RAISED /home/sylar/proyectos/croner/CronerWebApp/app/views/devise/sessions/new.html.erb:97: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/sylar/proyectos/croner/CronerWebApp/app/views/devise/sessions/new.html.erb:99: syntax error, unexpected end-of-input, expecting keyword_end
+Function body:           def _app_views_devise_sessions_new_html_erb__2074850044517901903_69899218219540(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "devise/sessions/new";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_append='<div id="wrapper" class="layout-empty">
+		
+		
+<div class="header clearfix">
+	<h1>Bienvenido a portezuelo!</h1>
+	<p>El sistema que centralizará tus ventas, pedidos y usuarios en las botillerías.</p>
+</div>
+
+<div class="row body-inset">
+	<div class="col-sm-4 col-sm-offset-4">
+		
+		<div class="panel panel-default panel-green">
+			<div class="panel-heading text-center">Inicio de sesión</div>
+			<div class="panel-body">
+
+				';@output_buffer.append=  form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| @output_buffer.safe_append='
+				
+				<div class="form-group text-center">
+					';@output_buffer.append=( f.label :email );@output_buffer.safe_append='
+					';@output_buffer.append=( f.email_field :email, :autofocus => true, :class => "form-control" );@output_buffer.safe_append='
+				</div>
+				<div class="form-group text-center">
+					';@output_buffer.append=( f.label :password );@output_buffer.safe_append='
+					';@output_buffer.append=( f.password_field :password, :class => "form-control" );@output_buffer.safe_append='
+				</div>
+				
+				<div class="text-center">
+					<input class="btn btn-primary" name="commit" type="submit" value="Ingresar" />
+				</div>
+</form>
+				<hr>
+
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<a href="#" class="btn btn-link">Youser SpA, 2014</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+	<div class="col-md-4 col-md-offset-4">
+		<div class="panel panel-default">
+			<div class="panel-heading">Iniciar sesión</div>
+			<div class="panel-body">
+				';@output_buffer.append=  form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| @output_buffer.safe_append='
+				<div class="form-group">
+					';@output_buffer.append=( f.label :email );@output_buffer.safe_append='
+					';@output_buffer.append=( f.email_field :email, :autofocus => true, :class => "form-control" );@output_buffer.safe_append='
+				</div>
+				<div class="form-group">
+					';@output_buffer.append=( f.label :password );@output_buffer.safe_append='
+					';@output_buffer.append=( f.password_field :password, :class => "form-control" );@output_buffer.safe_append='
+				</div>
+';				 if devise_mapping.rememberable? 
+@output_buffer.safe_append='					<div>
+						';@output_buffer.append=( f.check_box :remember_me );@output_buffer.safe_append=' ';@output_buffer.append=( f.label :remember_me );@output_buffer.safe_append='
+					</div>
+';				 end 
+@output_buffer.safe_append='
+				<div>
+					';@output_buffer.append=( f.submit "Sign in", :class => "btn btn-success" );@output_buffer.safe_append='
+				</div>
+';				 end 		
+@output_buffer.safe_append='				';@output_buffer.append=( render "devise/shared/links" );@output_buffer.safe_append='		
+';@output_buffer.safe_append='			</div>
+		</div>
+	</div>
+</div>
+
+	
+
+
+
+	
+';@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/template.rb:299:in `module_eval'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/template.rb:299:in `compile'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/template.rb:248:in `block in compile!'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/template.rb:236:in `synchronize'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/template.rb:236:in `compile!'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/template.rb:142:in `block in render'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/notifications.rb:161:in `instrument'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/template.rb:141:in `render'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `block in instrument'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `instrument'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:17:in `render'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/renderer/renderer.rb:42:in `render_template'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/renderer/renderer.rb:23:in `render'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:127:in `_render_template'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:97:in `render'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+/home/sylar/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activerecord-4.0.2/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/responder.rb:233:in `default_render'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/responder.rb:161:in `to_html'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/responder.rb:154:in `respond'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/responder.rb:147:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/mime_responds.rb:330:in `respond_with'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/devise-3.2.2/app/controllers/devise/sessions_controller.rb:10:in `new'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/abstract_controller/base.rb:189:in `process_action'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:443:in `_run__960619268505181061__process_action__callbacks'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `block in instrument'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `instrument'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activerecord-4.0.2/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/abstract_controller/base.rb:136:in `process'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:44:in `process'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal.rb:195:in `dispatch'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal.rb:231:in `block in action'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:80:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:48:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/routing/mapper.rb:44:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:71:in `block in call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:59:in `each'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:59:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:680:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/warden-1.2.3/lib/warden/manager.rb:35:in `block in call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/warden-1.2.3/lib/warden/manager.rb:34:in `catch'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/warden-1.2.3/lib/warden/manager.rb:34:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/flash.rb:241:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activerecord-4.0.2/lib/active_record/query_cache.rb:36:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activerecord-4.0.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activerecord-4.0.2/lib/active_record/migration.rb:369:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:373:in `_run__3785356009863526365__call__callbacks'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/railties-4.0.2/lib/rails/rack/logger.rb:38:in `call_app'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/railties-4.0.2/lib/rails/rack/logger.rb:20:in `block in call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:25:in `tagged'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:67:in `tagged'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/railties-4.0.2/lib/rails/rack/logger.rb:20:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/static.rb:64:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/railties-4.0.2/lib/rails/engine.rb:511:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/railties-4.0.2/lib/rails/application.rb:97:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+/home/sylar/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+/home/sylar/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+/home/sylar/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered devise/sessions/new.html.erb within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (/home/sylar/proyectos/croner/CronerWebApp/app/views/devise/sessions/new.html.erb:97: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/sylar/proyectos/croner/CronerWebApp/app/views/devise/sessions/new.html.erb:99: syntax error, unexpected end-of-input, expecting keyword_end):
+    94: 
+    95: 	
+  actionpack (4.0.2) lib/action_view/template.rb:299:in `module_eval'
+  actionpack (4.0.2) lib/action_view/template.rb:299:in `compile'
+  actionpack (4.0.2) lib/action_view/template.rb:248:in `block in compile!'
+  actionpack (4.0.2) lib/action_view/template.rb:236:in `synchronize'
+  actionpack (4.0.2) lib/action_view/template.rb:236:in `compile!'
+  actionpack (4.0.2) lib/action_view/template.rb:142:in `block in render'
+  activesupport (4.0.2) lib/active_support/notifications.rb:161:in `instrument'
+  actionpack (4.0.2) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.2) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/sylar/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/responder.rb:233:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/responder.rb:161:in `to_html'
+  actionpack (4.0.2) lib/action_controller/metal/responder.rb:154:in `respond'
+  actionpack (4.0.2) lib/action_controller/metal/responder.rb:147:in `call'
+  actionpack (4.0.2) lib/action_controller/metal/mime_responds.rb:330:in `respond_with'
+  devise (3.2.2) app/controllers/devise/sessions_controller.rb:10:in `new'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:443:in `_run__960619268505181061__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/mapper.rb:44:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__3785356009863526365__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/sylar/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/sylar/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/sylar/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.3ms)
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (40.5ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-01 13:30:20 -0300
+Processing by Devise::SessionsController#new as HTML
+ERROR: compiling _app_views_devise_sessions_new_html_erb__2074850044517901903_69899218397780 RAISED /home/sylar/proyectos/croner/CronerWebApp/app/views/devise/sessions/new.html.erb:96: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/sylar/proyectos/croner/CronerWebApp/app/views/devise/sessions/new.html.erb:98: syntax error, unexpected end-of-input, expecting keyword_end
+Function body:           def _app_views_devise_sessions_new_html_erb__2074850044517901903_69899218397780(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "devise/sessions/new";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_append='<div id="wrapper" class="layout-empty">
+		
+		
+<div class="header clearfix">
+	<h1>Bienvenido a portezuelo!</h1>
+	<p>El sistema que centralizará tus ventas, pedidos y usuarios en las botillerías.</p>
+</div>
+
+<div class="row body-inset">
+	<div class="col-sm-4 col-sm-offset-4">
+		
+		<div class="panel panel-default panel-green">
+			<div class="panel-heading text-center">Inicio de sesión</div>
+			<div class="panel-body">
+
+				';@output_buffer.append=  form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| @output_buffer.safe_append='
+				
+				<div class="form-group text-center">
+					';@output_buffer.append=( f.label :email );@output_buffer.safe_append='
+					';@output_buffer.append=( f.email_field :email, :autofocus => true, :class => "form-control" );@output_buffer.safe_append='
+				</div>
+				<div class="form-group text-center">
+					<label for="passwd">Contraseña</label>
+					<input class="form-control" id="passwd" name="passwd" placeholder="Contraseña" type="password" />
+				</div>
+				<div class="text-center">
+					<input class="btn btn-primary" name="commit" type="submit" value="Ingresar" />
+				</div>
+</form>
+				<hr>
+
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<a href="#" class="btn btn-link">Youser SpA, 2014</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+	<div class="col-md-4 col-md-offset-4">
+		<div class="panel panel-default">
+			<div class="panel-heading">Iniciar sesión</div>
+			<div class="panel-body">
+				';@output_buffer.append=  form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| @output_buffer.safe_append='
+				<div class="form-group">
+					';@output_buffer.append=( f.label :email );@output_buffer.safe_append='
+					';@output_buffer.append=( f.email_field :email, :autofocus => true, :class => "form-control" );@output_buffer.safe_append='
+				</div>
+				<div class="form-group">
+					';@output_buffer.append=( f.label :password );@output_buffer.safe_append='
+					';@output_buffer.append=( f.password_field :password, :class => "form-control" );@output_buffer.safe_append='
+				</div>
+';				 if devise_mapping.rememberable? 
+@output_buffer.safe_append='					<div>
+						';@output_buffer.append=( f.check_box :remember_me );@output_buffer.safe_append=' ';@output_buffer.append=( f.label :remember_me );@output_buffer.safe_append='
+					</div>
+';				 end 
+@output_buffer.safe_append='
+				<div>
+					';@output_buffer.append=( f.submit "Sign in", :class => "btn btn-success" );@output_buffer.safe_append='
+				</div>
+';				 end 		
+@output_buffer.safe_append='				';@output_buffer.append=( render "devise/shared/links" );@output_buffer.safe_append='		
+';@output_buffer.safe_append='			</div>
+		</div>
+	</div>
+</div>
+
+	
+
+
+
+	
+';@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/template.rb:299:in `module_eval'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/template.rb:299:in `compile'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/template.rb:248:in `block in compile!'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/template.rb:236:in `synchronize'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/template.rb:236:in `compile!'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/template.rb:142:in `block in render'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/notifications.rb:161:in `instrument'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/template.rb:141:in `render'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `block in instrument'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `instrument'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:17:in `render'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/renderer/renderer.rb:42:in `render_template'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/renderer/renderer.rb:23:in `render'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:127:in `_render_template'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:97:in `render'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+/home/sylar/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activerecord-4.0.2/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/responder.rb:233:in `default_render'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/responder.rb:161:in `to_html'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/responder.rb:154:in `respond'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/responder.rb:147:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/mime_responds.rb:330:in `respond_with'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/devise-3.2.2/app/controllers/devise/sessions_controller.rb:10:in `new'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/abstract_controller/base.rb:189:in `process_action'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:443:in `_run__960619268505181061__process_action__callbacks'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `block in instrument'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `instrument'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activerecord-4.0.2/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/abstract_controller/base.rb:136:in `process'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:44:in `process'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal.rb:195:in `dispatch'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal.rb:231:in `block in action'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:80:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:48:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/routing/mapper.rb:44:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:71:in `block in call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:59:in `each'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:59:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:680:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/warden-1.2.3/lib/warden/manager.rb:35:in `block in call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/warden-1.2.3/lib/warden/manager.rb:34:in `catch'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/warden-1.2.3/lib/warden/manager.rb:34:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/flash.rb:241:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activerecord-4.0.2/lib/active_record/query_cache.rb:36:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activerecord-4.0.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activerecord-4.0.2/lib/active_record/migration.rb:369:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:373:in `_run__3785356009863526365__call__callbacks'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/railties-4.0.2/lib/rails/rack/logger.rb:38:in `call_app'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/railties-4.0.2/lib/rails/rack/logger.rb:20:in `block in call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:25:in `tagged'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:67:in `tagged'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/railties-4.0.2/lib/rails/rack/logger.rb:20:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/static.rb:64:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/railties-4.0.2/lib/rails/engine.rb:511:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/railties-4.0.2/lib/rails/application.rb:97:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+/home/sylar/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+/home/sylar/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+/home/sylar/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered devise/sessions/new.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (/home/sylar/proyectos/croner/CronerWebApp/app/views/devise/sessions/new.html.erb:96: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/sylar/proyectos/croner/CronerWebApp/app/views/devise/sessions/new.html.erb:98: syntax error, unexpected end-of-input, expecting keyword_end):
+    93: 
+    94: 	
+  actionpack (4.0.2) lib/action_view/template.rb:299:in `module_eval'
+  actionpack (4.0.2) lib/action_view/template.rb:299:in `compile'
+  actionpack (4.0.2) lib/action_view/template.rb:248:in `block in compile!'
+  actionpack (4.0.2) lib/action_view/template.rb:236:in `synchronize'
+  actionpack (4.0.2) lib/action_view/template.rb:236:in `compile!'
+  actionpack (4.0.2) lib/action_view/template.rb:142:in `block in render'
+  activesupport (4.0.2) lib/active_support/notifications.rb:161:in `instrument'
+  actionpack (4.0.2) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.2) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/sylar/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/responder.rb:233:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/responder.rb:161:in `to_html'
+  actionpack (4.0.2) lib/action_controller/metal/responder.rb:154:in `respond'
+  actionpack (4.0.2) lib/action_controller/metal/responder.rb:147:in `call'
+  actionpack (4.0.2) lib/action_controller/metal/mime_responds.rb:330:in `respond_with'
+  devise (3.2.2) app/controllers/devise/sessions_controller.rb:10:in `new'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:443:in `_run__960619268505181061__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/mapper.rb:44:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__3785356009863526365__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/sylar/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/sylar/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/sylar/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-01 13:30:27 -0300
+Processing by Devise::SessionsController#new as HTML
+ERROR: compiling _app_views_devise_sessions_new_html_erb__2074850044517901903_69899118076760 RAISED /home/sylar/proyectos/croner/CronerWebApp/app/views/devise/sessions/new.html.erb:96: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/sylar/proyectos/croner/CronerWebApp/app/views/devise/sessions/new.html.erb:98: syntax error, unexpected end-of-input, expecting keyword_end
+Function body:           def _app_views_devise_sessions_new_html_erb__2074850044517901903_69899118076760(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "devise/sessions/new";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_append='<div id="wrapper" class="layout-empty">
+		
+		
+<div class="header clearfix">
+	<h1>Bienvenido a portezuelo!</h1>
+	<p>El sistema que centralizará tus ventas, pedidos y usuarios en las botillerías.</p>
+</div>
+
+<div class="row body-inset">
+	<div class="col-sm-4 col-sm-offset-4">
+		
+		<div class="panel panel-default panel-green">
+			<div class="panel-heading text-center">Inicio de sesión</div>
+			<div class="panel-body">
+
+				';@output_buffer.append=  form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| @output_buffer.safe_append='
+				
+				<div class="form-group text-center">
+					<label for="rut">RUT</label>
+					<input class="form-control" id="rut" name="rut" placeholder="Cédula de identidad" type="text" />
+				</div>
+				<div class="form-group text-center">
+					<label for="passwd">Contraseña</label>
+					<input class="form-control" id="passwd" name="passwd" placeholder="Contraseña" type="password" />
+				</div>
+				<div class="text-center">
+					<input class="btn btn-primary" name="commit" type="submit" value="Ingresar" />
+				</div>
+</form>
+				<hr>
+
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<a href="#" class="btn btn-link">Youser SpA, 2014</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+	<div class="col-md-4 col-md-offset-4">
+		<div class="panel panel-default">
+			<div class="panel-heading">Iniciar sesión</div>
+			<div class="panel-body">
+				';@output_buffer.append=  form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| @output_buffer.safe_append='
+				<div class="form-group">
+					';@output_buffer.append=( f.label :email );@output_buffer.safe_append='
+					';@output_buffer.append=( f.email_field :email, :autofocus => true, :class => "form-control" );@output_buffer.safe_append='
+				</div>
+				<div class="form-group">
+					';@output_buffer.append=( f.label :password );@output_buffer.safe_append='
+					';@output_buffer.append=( f.password_field :password, :class => "form-control" );@output_buffer.safe_append='
+				</div>
+';				 if devise_mapping.rememberable? 
+@output_buffer.safe_append='					<div>
+						';@output_buffer.append=( f.check_box :remember_me );@output_buffer.safe_append=' ';@output_buffer.append=( f.label :remember_me );@output_buffer.safe_append='
+					</div>
+';				 end 
+@output_buffer.safe_append='
+				<div>
+					';@output_buffer.append=( f.submit "Sign in", :class => "btn btn-success" );@output_buffer.safe_append='
+				</div>
+';				 end 		
+@output_buffer.safe_append='				';@output_buffer.append=( render "devise/shared/links" );@output_buffer.safe_append='		
+';@output_buffer.safe_append='			</div>
+		</div>
+	</div>
+</div>
+
+	
+
+
+
+	
+';@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/template.rb:299:in `module_eval'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/template.rb:299:in `compile'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/template.rb:248:in `block in compile!'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/template.rb:236:in `synchronize'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/template.rb:236:in `compile!'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/template.rb:142:in `block in render'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/notifications.rb:161:in `instrument'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/template.rb:141:in `render'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `block in instrument'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `instrument'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/renderer/template_renderer.rb:17:in `render'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/renderer/renderer.rb:42:in `render_template'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_view/renderer/renderer.rb:23:in `render'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:127:in `_render_template'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:97:in `render'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+/home/sylar/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activerecord-4.0.2/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/responder.rb:233:in `default_render'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/responder.rb:161:in `to_html'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/responder.rb:154:in `respond'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/responder.rb:147:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/mime_responds.rb:330:in `respond_with'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/devise-3.2.2/app/controllers/devise/sessions_controller.rb:10:in `new'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/abstract_controller/base.rb:189:in `process_action'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:443:in `_run__960619268505181061__process_action__callbacks'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `block in instrument'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/notifications.rb:159:in `instrument'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activerecord-4.0.2/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/abstract_controller/base.rb:136:in `process'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/abstract_controller/rendering.rb:44:in `process'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal.rb:195:in `dispatch'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_controller/metal.rb:231:in `block in action'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:80:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:48:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/routing/mapper.rb:44:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:71:in `block in call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:59:in `each'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/journey/router.rb:59:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/routing/route_set.rb:680:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/warden-1.2.3/lib/warden/manager.rb:35:in `block in call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/warden-1.2.3/lib/warden/manager.rb:34:in `catch'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/warden-1.2.3/lib/warden/manager.rb:34:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/flash.rb:241:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activerecord-4.0.2/lib/active_record/query_cache.rb:36:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activerecord-4.0.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activerecord-4.0.2/lib/active_record/migration.rb:369:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:373:in `_run__3785356009863526365__call__callbacks'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/railties-4.0.2/lib/rails/rack/logger.rb:38:in `call_app'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/railties-4.0.2/lib/rails/rack/logger.rb:20:in `block in call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:25:in `tagged'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/tagged_logging.rb:67:in `tagged'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/railties-4.0.2/lib/rails/rack/logger.rb:20:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/activesupport-4.0.2/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/static.rb:64:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/railties-4.0.2/lib/rails/engine.rb:511:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/railties-4.0.2/lib/rails/application.rb:97:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+/home/sylar/.rvm/gems/ruby-2.1.2/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+/home/sylar/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+/home/sylar/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+/home/sylar/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered devise/sessions/new.html.erb within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (/home/sylar/proyectos/croner/CronerWebApp/app/views/devise/sessions/new.html.erb:96: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/sylar/proyectos/croner/CronerWebApp/app/views/devise/sessions/new.html.erb:98: syntax error, unexpected end-of-input, expecting keyword_end):
+    93: 
+    94: 	
+  actionpack (4.0.2) lib/action_view/template.rb:299:in `module_eval'
+  actionpack (4.0.2) lib/action_view/template.rb:299:in `compile'
+  actionpack (4.0.2) lib/action_view/template.rb:248:in `block in compile!'
+  actionpack (4.0.2) lib/action_view/template.rb:236:in `synchronize'
+  actionpack (4.0.2) lib/action_view/template.rb:236:in `compile!'
+  actionpack (4.0.2) lib/action_view/template.rb:142:in `block in render'
+  activesupport (4.0.2) lib/active_support/notifications.rb:161:in `instrument'
+  actionpack (4.0.2) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.2) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.2) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.2) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/sylar/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.0.2) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/responder.rb:233:in `default_render'
+  actionpack (4.0.2) lib/action_controller/metal/responder.rb:161:in `to_html'
+  actionpack (4.0.2) lib/action_controller/metal/responder.rb:154:in `respond'
+  actionpack (4.0.2) lib/action_controller/metal/responder.rb:147:in `call'
+  actionpack (4.0.2) lib/action_controller/metal/mime_responds.rb:330:in `respond_with'
+  devise (3.2.2) app/controllers/devise/sessions_controller.rb:10:in `new'
+  actionpack (4.0.2) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:443:in `_run__960619268505181061__process_action__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.2) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/mapper.rb:44:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__3785356009863526365__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/sylar/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/sylar/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/sylar/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.4ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-01 13:31:11 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-01 13:31:11 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-01 13:31:11 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 13:31:11 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-01 13:31:11 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 13:31:11 -0300
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-01 13:32:16 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 21ms (Views: 18.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 13:32:16 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-01 13:32:16 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-01 13:32:16 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-01 13:32:16 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 13:32:16 -0300
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-01 13:32:38 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 19ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 13:32:38 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-01 13:32:38 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-01 13:32:38 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 13:32:38 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-01 13:32:38 -0300
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-01 13:33:17 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 17ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 13:33:17 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-01 13:33:17 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 13:33:17 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-01 13:33:17 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-01 13:33:17 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-01 13:39:03 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 13:39:03 -0300
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-01 13:44:14 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/img/cronerBlanco-02.png" for 127.0.0.1 at 2014-12-01 13:44:14 -0300
+
+ActionController::RoutingError (No route matches [GET] "/users/img/cronerBlanco-02.png"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/sylar/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/sylar/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/sylar/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.2ms)
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (26.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 13:44:14 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-01 13:44:14 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 13:44:14 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-01 13:44:14 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-01 13:44:14 -0300
+
+
+Started GET "/users/img/cronerBlanco-02.png" for 127.0.0.1 at 2014-12-01 13:44:14 -0300
+
+ActionController::RoutingError (No route matches [GET] "/users/img/cronerBlanco-02.png"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/sylar/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/sylar/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/sylar/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.6ms)
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (29.1ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-01 13:44:23 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-01 13:44:23 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-01 13:44:23 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-01 13:44:23 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 13:44:23 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 13:44:23 -0300
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-01 13:44:33 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 19ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 13:44:33 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-01 13:44:33 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-01 13:44:33 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-01 13:44:33 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 13:44:33 -0300
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-01 13:45:42 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 13:45:42 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-01 13:45:42 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-01 13:45:42 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-01 13:45:42 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 13:45:42 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-01 13:45:57 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 13:45:57 -0300
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-01 13:47:12 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 13:47:12 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-01 13:47:12 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-01 13:47:12 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-01 13:47:12 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 13:47:12 -0300
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-01 13:47:17 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 13:47:17 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-01 13:47:17 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 13:47:17 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-01 13:47:17 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-01 13:47:17 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-01 13:47:28 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 13:47:28 -0300
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-01 13:49:29 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 13:49:29 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-01 13:49:29 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-01 13:49:29 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-01 13:49:29 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 13:49:29 -0300
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-01 13:51:22 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 16ms (Views: 13.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 13:51:22 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-01 13:51:22 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-01 13:51:22 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 13:51:22 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-01 13:51:22 -0300
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-01 13:51:51 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 13:51:51 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-01 13:51:51 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-01 13:51:51 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-01 13:51:51 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 13:51:51 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 13:52:26 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-01 13:52:26 -0300
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-01 14:01:11 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 1062ms (Views: 1045.6ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-01 14:01:13 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-01 14:01:13 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-01 14:01:13 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 14:01:13 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 14:01:13 -0300
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-01 14:02:10 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 16ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 14:02:10 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-01 14:02:10 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 14:02:10 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-01 14:02:10 -0300
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-01 14:04:43 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 14:04:43 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-01 14:04:43 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-01 14:04:43 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 14:04:43 -0300
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-01 14:06:54 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 14:06:54 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-01 14:06:54 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 14:06:54 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-01 14:06:54 -0300
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-01 14:07:23 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 15ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 14:07:23 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-01 14:07:23 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-01 14:07:23 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 14:07:23 -0300
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-01 14:08:04 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 14:08:04 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-01 14:08:04 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 14:08:04 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-01 14:08:04 -0300
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-01 14:08:18 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 14:08:18 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-01 14:08:18 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-01 14:08:18 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 14:08:18 -0300
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-01 14:08:51 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 14:08:51 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-01 14:08:51 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-01 14:08:51 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 14:08:51 -0300
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-01 14:09:40 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 20ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 14:09:40 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-01 14:09:40 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-01 14:09:40 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 14:09:40 -0300
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-01 14:10:02 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 872ms (Views: 870.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 14:10:03 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 14:10:03 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-01 14:10:03 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-01 14:10:03 -0300
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-01 14:10:06 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 14:10:06 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-01 14:10:06 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-01 14:10:06 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 14:10:06 -0300
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-01 14:10:23 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 839ms (Views: 837.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 14:10:24 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-01 14:10:24 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 14:10:24 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-01 14:10:24 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 14:10:37 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 14:11:09 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 14:12:29 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 14:13:26 -0300
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-01 14:14:57 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 718ms (Views: 716.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 14:14:58 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-01 14:14:58 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 14:14:58 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-01 14:14:58 -0300
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-01 14:16:36 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 825ms (Views: 824.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 14:16:36 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-01 14:16:37 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-01 14:16:37 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 14:16:37 -0300
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-01 14:26:03 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (26.7ms)
+Completed 200 OK in 115ms (Views: 81.5ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-01 14:26:04 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-01 14:26:04 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-01 14:26:04 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-01 14:26:04 -0300
