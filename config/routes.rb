@@ -1,8 +1,6 @@
 CronerWebApp::Application.routes.draw do
 
-  resources :dashboard do
-    collection { get :custAdmin}
-  end  
+  resources :contacts
 
   resources :customers
 
