@@ -17,6 +17,8 @@ module CronerWebApp
     # config.time_zone = 'Central Time (US & Canada)'
 
     config.app_generators.stylesheet_engine :less
+    config.less.paths << "#{Rails.root}/lib/less/protractor/stylesheets"
+    config.less.compress = true
 
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]

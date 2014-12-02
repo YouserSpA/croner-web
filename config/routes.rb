@@ -1,8 +1,13 @@
 CronerWebApp::Application.routes.draw do
 
+  resources :dashboard do
+    collection { get :custAdmin}
+  end  
+
   resources :customers
 
   devise_for :users
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
