@@ -5,6 +5,7 @@ class CustomersController < ApplicationController
   # GET /customers
   def index
     @customers = Customer.all
+    @user = current_user
   end
 
   # GET /customers/1

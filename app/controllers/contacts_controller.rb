@@ -1,18 +1,22 @@
 class ContactsController < ApplicationController
+  before_filter :authenticate_user!, only: [:edit, :update, :destroy, :new, :create]
   before_action :set_contact, only: [:show, :edit, :update, :destroy]
 
   # GET /contacts
   def index
     @contacts = Contact.all
+    @user = current_user
   end
 
   # GET /contacts/1
   def show
+    @user = current_user
   end
 
   # GET /contacts/new
   def new
     @contact = Contact.new
+    @user = current_user
   end
 
   # GET /contacts/1/edit
