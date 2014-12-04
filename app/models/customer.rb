@@ -3,6 +3,7 @@ class Customer < ActiveRecord::Base
 	include Importable
 	include Exportable
 
+	has_many :employees
 		
 	# Validations
 			# validates :name, <validations>

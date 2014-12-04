@@ -1,0 +1,69 @@
+<h2 class="page-title page-title-green">
+	<span class="glyphicon glyphicon-align-left"></span>
+	empleados
+</h2>
+
+
+<div class="page-body">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="panel panel-primary">
+				<div class="panel-heading">Detalle empleado</div>
+				<div class="panel-body">
+
+					<div class="row">
+						<div class="col-md-6">
+							<table class="table">
+								<tbody>
+																			<tr>
+										  <th>Cod Trabajador:</th>
+										  <td><%= @employee.worker_id %></td>
+										</tr>
+																		<tr>
+										  <th>Tipo de contrato:</th>
+										  <td><%= @employee.contract_type %></td>
+										</tr>
+													<tr>
+										  <th>Horas semanales:</th>
+										  <td><%= @employee.weekly_hours %></td>
+										</tr>
+																			<tr>
+										  <th>Run:</th>
+										  <td><%= @employee.run %></td>
+										</tr>
+																			<tr>
+										  <th>Names:</th>
+										  <td><%= @employee.names %></td>
+										</tr>
+																			<tr>
+										  <th>Lastnames:</th>
+										  <td><%= @employee.lastnames %></td>
+										</tr>
+																			<tr>
+										  <th>Email:</th>
+										  <td><%= @employee.email %></td>
+										</tr>
+																			<tr>
+										  <th>Addres:</th>
+										  <td><%= @employee.addres %></td>
+										</tr>
+																			<tr>
+										  <th>Birthdate:</th>
+										  <td><%= @employee.birthdate %></td>
+										</tr>
+																	</tbody>
+							</table>
+						</div>
+
+					</div>
+
+<%= link_to 'Editar', edit_employee_path(@employee), :class => "btn btn-default" %>
+<%= link_to 'Destruir', @employee, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger" %>
+<%= link_to 'Volver', employees_path, :class => "btn btn-link" %>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>

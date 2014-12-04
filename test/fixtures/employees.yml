@@ -1,15 +1,19 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  worker_id: MyString
   run: MyString
   names: MyString
   lastnames: MyString
   email: MyString
-  birthdate: 2014-12-02
+  addres: MyString
+  birthdate: 2014-12-03
 
 two:
+  worker_id: MyString
   run: MyString
   names: MyString
   lastnames: MyString
   email: MyString
-  birthdate: 2014-12-02
+  addres: MyString
+  birthdate: 2014-12-03

@@ -1,7 +1,16 @@
 class ApplicationController < ActionController::Base
+  before_filter :set_user
+
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
+
+  def set_user  # Se pone a disposición los datos del usuario que ha ingresado al sistema
+    if user_signed_in?
+      @user = current_user
+      @customer = Customer.find(@user.customer_id)
+    end 
+  end
 
   # def after_sign_in_path_for(resource)
   #   dashboard_index_path

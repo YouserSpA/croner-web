@@ -6,6 +6,11 @@
   <div><%= f.label :email %><br />
   <%= f.email_field :email, :autofocus => true %></div>
 
+  <div>  
+  <%= f.label :customer %><br />
+  <%= select("user", "customer_id", Customer.all.collect {|p| [ p.name, p.id ] }, {include_blank: 'None'}) %>
+  </div>
+
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
   <% end %>

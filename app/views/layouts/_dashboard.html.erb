@@ -8,7 +8,8 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="/home/index">Croner</a>
+					<%= link_to "Croner", root_path, :class => "navbar-brand"  %>
+					<!-- <a class="navbar-brand" href="/home/index">Croner</a> -->
 					<a id="menu-toggle" href="#"><span class="glyphicon glyphicon-th-list"></span></a>
 				</div>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -20,7 +21,7 @@
 						</li>
 						<li><a>
 							<span class="glyphicon glyphicon-user"></span>
-							<%= @user.email %>
+								<%= @user.email %>
 							</a>
 						</li>
 					</ul>
@@ -34,13 +35,13 @@
 
 		<div id="sidebar-wrapper">
 			<ul class="sidebar-nav">
-                <li><a href="/negocios"><span class="glyphicon glyphicon-briefcase"></span>Negocios</a></li>
-                <li><a href="/productos"><span class="glyphicon glyphicon-align-left"></span>Productos</a></li>
+                <li><a href="<%= employees_path%>"><span class="glyphicon glyphicon-user"></span>Empleados</a></li>
+                <!-- <li><a href="/productos"><span class="glyphicon glyphicon-align-left"></span>Productos</a></li>
                 <li><a href="/inventarios"><span class="glyphicon glyphicon-th"></span>Inventario</a></li>
                 <li><a href="/pedidos"><span class="glyphicon glyphicon-pencil"></span>Pedidos</a></li>
                 <li><a href="/venta"><span class="glyphicon glyphicon-signal"></span>Ventas</a></li>
-                <li><a href="/users"><span class="glyphicon glyphicon-user"></span>Usuarios</a></li>
-                <li><a href="/config/index"><span class="glyphicon glyphicon-cog"></span>Configuración</a></li>
+                <li><a href="/users"><span class="glyphicon glyphicon-user"></span>Usuarios</a></li> -->
+                <li><a href="/"><span class="glyphicon glyphicon-cog"></span>Configuración</a></li>
             </ul>
 		</div>
 

@@ -1,6 +1,6 @@
 CronerWebApp::Application.routes.draw do
 
-  resources :contacts
+  resources :employees
 
   resources :customers
 

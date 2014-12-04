@@ -11,17 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141202175800) do
-
-  create_table "contacts", force: true do |t|
-    t.string   "run"
-    t.string   "names"
-    t.string   "lastnames"
-    t.string   "email"
-    t.date     "birthdate"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+ActiveRecord::Schema.define(version: 20141204205817) do
 
   create_table "customers", force: true do |t|
     t.string   "name"
@@ -32,6 +22,23 @@ ActiveRecord::Schema.define(version: 20141202175800) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "employees", force: true do |t|
+    t.string   "worker_id"
+    t.string   "run"
+    t.string   "names"
+    t.string   "lastnames"
+    t.string   "email"
+    t.string   "addres"
+    t.date     "birthdate"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "customer_id",   null: false
+    t.integer  "weekly_hours"
+    t.text     "contract_type"
+  end
+
+  add_index "employees", ["customer_id"], name: "index_employees_on_customer_id", using: :btree
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
