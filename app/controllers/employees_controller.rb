@@ -21,7 +21,7 @@ class EmployeesController < ApplicationController
 
   # POST /employees
   def create
-    @employee = Employee.new(employee_params)
+    @employee = @customer.employees.new(employee_params)
 
     if @employee.save
       redirect_to @employee, notice: 'Employee was successfully created.'
@@ -41,6 +41,7 @@ class EmployeesController < ApplicationController
 
   # DELETE /employees/1
   def destroy
+    @employee = @customer.employees.find(params[:id])
     @employee.destroy
     redirect_to employees_url, notice: 'Employee was successfully destroyed.'
   end
@@ -53,6 +54,6 @@ class EmployeesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def employee_params
-      params.require(:employee).permit(:worker_id, :run, :names, :lastnames, :email, :addres, :birthdate, :customer, :contract_type, :weekly_hours)
+      params.require(:employee).permit(:worker_id, :run, :names, :lastnames, :email, :addres, :birthdate, :contract_type, :weekly_hours, :avatar)
     end
 end

@@ -52,3 +52,8 @@ gem 'devise'
 gem 'paperclip', '~> 4.1'
 
 gem 'rename'
+
+# Pagination {
+gem 'will_paginate'
+gem 'will_paginate-bootstrap'
+# }

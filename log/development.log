@@ -18158,3 +18158,2934 @@ Processing by EmployeesController#show as HTML
   Rendered layouts/_messages.html.erb (0.6ms)
   Rendered layouts/_dashboard.html.erb (2.7ms)
 Completed 200 OK in 22ms (Views: 17.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/employees" for 127.0.0.1 at 2014-12-04 18:19:52 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by EmployeesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mEmployee Load (0.2ms)[0m  SELECT `employees`.* FROM `employees`
+  Rendered employees/index.html.erb within layouts/application (16.7ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+  Rendered layouts/_dashboard.html.erb (2.3ms)
+Completed 200 OK in 149ms (Views: 94.6ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 18:19:52 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 18:19:52 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 18:19:52 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 18:19:53 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 18:19:53 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 18:19:53 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 18:19:53 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 18:19:53 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 18:19:53 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 18:19:53 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to AddAvatarToEmployees (20141204212953)
+  [1m[35m (272.9ms)[0m  ALTER TABLE `employees` ADD `avatar_file_name` varchar(255)
+  [1m[36m (322.6ms)[0m  [1mALTER TABLE `employees` ADD `avatar_content_type` varchar(255)[0m
+  [1m[35m (267.0ms)[0m  ALTER TABLE `employees` ADD `avatar_file_size` int(11)
+  [1m[36m (267.0ms)[0m  [1mALTER TABLE `employees` ADD `avatar_updated_at` datetime[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20141204212953')[0m
+  [1m[35m (45.3ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+
+
+Started GET "/employees" for 127.0.0.1 at 2014-12-04 18:40:29 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by EmployeesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.3ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mEmployee Load (0.7ms)[0m  SELECT `employees`.* FROM `employees`
+  Rendered employees/index.html.erb within layouts/application (33.6ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+  Rendered layouts/_dashboard.html.erb (2.4ms)
+Completed 200 OK in 175ms (Views: 103.0ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 18:40:29 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 18:40:29 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 18:40:29 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 18:40:29 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 18:40:29 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 18:40:29 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 18:40:29 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 18:40:29 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 18:40:29 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 18:40:29 -0300
+
+
+Started GET "/employees/1" for 127.0.0.1 at 2014-12-04 18:40:33 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mEmployee Load (0.6ms)[0m  [1mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1[0m
+  Rendered employees/show.html.erb within layouts/application (34.1ms)
+Completed 500 Internal Server Error in 44ms
+
+ActionView::Template::Error (undefined method `avatar' for #<User:0x007f6ac821e258>):
+    17: 								<tbody>
+    18: 																			<tr>
+    19: 										<td>
+    20: 										<%= image_tag @user.avatar.url %>
+    21: 										<%= image_tag @user.avatar.url(:medium) %>
+    22: 										<%= image_tag @user.avatar.url(:thumb) %>
+    23: 										</td>
+  app/views/employees/show.html.erb:20:in `_app_views_employees_show_html_erb__3782756587483016991_70048300503780'
+
+
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.5ms)
+
+
+Started GET "/employees/1" for 127.0.0.1 at 2014-12-04 18:40:33 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mEmployee Load (0.1ms)[0m  SELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1
+  Rendered employees/show.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (undefined method `avatar' for #<User:0x007f6ac8417f00>):
+    17: 								<tbody>
+    18: 																			<tr>
+    19: 										<td>
+    20: 										<%= image_tag @user.avatar.url %>
+    21: 										<%= image_tag @user.avatar.url(:medium) %>
+    22: 										<%= image_tag @user.avatar.url(:thumb) %>
+    23: 										</td>
+  app/views/employees/show.html.erb:20:in `_app_views_employees_show_html_erb__3782756587483016991_70048301498860'
+
+
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.8ms)
+
+
+Started GET "/employees/1" for 127.0.0.1 at 2014-12-04 18:40:56 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mEmployee Load (0.2ms)[0m  [1mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1[0m
+  Rendered employees/show.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined method `avatar' for #<User:0x007f6ac85d1418>):
+    17: 								<tbody>
+    18: 																			<tr>
+    19: 										<td>
+    20: 										<%= image_tag @user.avatar.url(:medium) %>
+    21: 										<%= image_tag @user.avatar.url(:thumb) %>
+    22: 										</td>
+    23: 										</tr>
+  app/views/employees/show.html.erb:20:in `_app_views_employees_show_html_erb__3782756587483016991_70048302443580'
+
+
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.2ms)
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (18.8ms)
+
+
+Started GET "/employees/1" for 127.0.0.1 at 2014-12-04 18:41:22 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mEmployee Load (0.1ms)[0m  SELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1
+  Rendered employees/show.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined method `avatar' for #<User:0x007f6ac8794188>):
+    17: 								<tbody>
+    18: 																			<tr>
+    19: 										<td>
+    20: 						<!-- 				<%= image_tag @user.avatar.url %>
+    21: 										<= image_tag @user.avatar.url(:medium) %>
+    22: 										<= image_tag @user.avatar.url(:thumb) %> -->
+    23: 										</td>
+  app/views/employees/show.html.erb:20:in `_app_views_employees_show_html_erb__3782756587483016991_70048303350520'
+
+
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.4ms)
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.7ms)
+
+
+Started GET "/employees/1" for 127.0.0.1 at 2014-12-04 18:41:29 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCustomer Load (0.1ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mEmployee Load (0.2ms)[0m  [1mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1[0m
+  Rendered employees/show.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.1ms)
+Completed 200 OK in 16ms (Views: 10.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 18:41:29 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 18:41:29 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 18:41:29 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 18:41:29 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 18:41:29 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 18:41:29 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 18:41:29 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 18:41:29 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 18:41:29 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 18:41:29 -0300
+
+
+Started DELETE "/employees/1" for 127.0.0.1 at 2014-12-04 18:41:35 -0300
+Processing by EmployeesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"3CcUv2A0ReC32mCdfD9hUcK/CWaY9eIV1GP3CeJzlzY=", "id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.3ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mEmployee Load (0.3ms)[0m  SELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 1 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  DELETE FROM `employees` WHERE `employees`.`id` = 1
+  [1m[36m (37.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/employees
+Completed 302 Found in 46ms (ActiveRecord: 39.7ms)
+
+
+Started GET "/employees" for 127.0.0.1 at 2014-12-04 18:41:35 -0300
+Processing by EmployeesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mEmployee Load (0.7ms)[0m  SELECT `employees`.* FROM `employees`
+  Rendered employees/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.0ms)
+Completed 200 OK in 15ms (Views: 9.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 18:41:35 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 18:41:35 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 18:41:35 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 18:41:35 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 18:41:35 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 18:41:35 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 18:41:35 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 18:41:35 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 18:41:35 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 18:41:35 -0300
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2014-12-04 18:41:42 -0300
+Processing by EmployeesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCustomer Load (0.4ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mCustomer Load (0.7ms)[0m  [1mSELECT `customers`.* FROM `customers`[0m
+  Rendered employees/_form.html.erb (262.4ms)
+  Rendered employees/new.html.erb within layouts/application (263.9ms)
+Completed 500 Internal Server Error in 271ms
+
+ActionView::Template::Error (undefined local variable or method `form' for #<#<Class:0x00000004443ed8>:0x007f6ad4af68d8>):
+    54:     </div>
+    55: <div class="form-group">
+    56:             <%= f.label :avatar %>
+    57:             <%= form.file_field :avatar %>
+    58:     </div>
+    59: <div class="actions">
+    60:     <%= f.submit :class => "btn btn-success" %>
+  app/views/employees/_form.html.erb:57:in `block in _app_views_employees__form_html_erb___2224669067787207179_70048405721560'
+  app/views/employees/_form.html.erb:1:in `_app_views_employees__form_html_erb___2224669067787207179_70048405721560'
+  app/views/employees/new.html.erb:3:in `_app_views_employees_new_html_erb__1437352005823247973_70048405760340'
+
+
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.6ms)
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2014-12-04 18:41:42 -0300
+Processing by EmployeesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT `customers`.* FROM `customers`
+  Rendered employees/_form.html.erb (23.3ms)
+  Rendered employees/new.html.erb within layouts/application (24.5ms)
+Completed 500 Internal Server Error in 32ms
+
+ActionView::Template::Error (undefined local variable or method `form' for #<#<Class:0x00000004443ed8>:0x00000003f50868>):
+    54:     </div>
+    55: <div class="form-group">
+    56:             <%= f.label :avatar %>
+    57:             <%= form.file_field :avatar %>
+    58:     </div>
+    59: <div class="actions">
+    60:     <%= f.submit :class => "btn btn-success" %>
+  app/views/employees/_form.html.erb:57:in `block in _app_views_employees__form_html_erb___2224669067787207179_33063600'
+  app/views/employees/_form.html.erb:1:in `_app_views_employees__form_html_erb___2224669067787207179_33063600'
+  app/views/employees/new.html.erb:3:in `_app_views_employees_new_html_erb__1437352005823247973_33152860'
+
+
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.4ms)
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2014-12-04 18:41:56 -0300
+Processing by EmployeesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT `customers`.* FROM `customers`[0m
+  Rendered employees/_form.html.erb (10.4ms)
+  Rendered employees/new.html.erb within layouts/application (11.3ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.3ms)
+Completed 200 OK in 25ms (Views: 21.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 18:41:56 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 18:41:56 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 18:41:56 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 18:41:56 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 18:41:56 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 18:41:56 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 18:41:56 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 18:41:56 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 18:41:56 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 18:41:56 -0300
+
+
+Started POST "/employees" for 127.0.0.1 at 2014-12-04 18:44:07 -0300
+Processing by EmployeesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3CcUv2A0ReC32mCdfD9hUcK/CWaY9eIV1GP3CeJzlzY=", "employee"=>{"customer_id"=>"1", "worker_id"=>"1", "contract_type"=>"Diurno", "weekly_hours"=>"45", "run"=>"1-9", "names"=>"Mosheh-efra Osvaldo", "lastnames"=>"Landaeta Sanchez", "email"=>"mlandaetasanchez@gmail.com", "addres"=>"Embajador Quintana 4368", "birthdate(1i)"=>"2009", "birthdate(2i)"=>"12", "birthdate(3i)"=>"4", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x007f6ac84ec908 @tempfile=#<Tempfile:/tmp/RackMultipart20141204-5916-6pv0dp>, @original_filename="yo.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"employee[avatar]\"; filename=\"yo.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Employee"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+Unpermitted parameters: customer_id
+Command :: file -b --mime-type '/tmp/8d02a3b3b65f63790197545a640298ab20141204-5916-syuyc7'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/65289b6f62b01a266799da33b910e29a20141204-5916-1h0v8yr[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/65289b6f62b01a266799da33b910e29a20141204-5916-1h0v8yr[0]'
+Command :: convert '/tmp/65289b6f62b01a266799da33b910e29a20141204-5916-1h0v8yr[0]' -auto-orient -resize "300x300>" '/tmp/65289b6f62b01a266799da33b910e29a20141204-5916-1h0v8yr20141204-5916-5w9rl4'
+Command :: file -b --mime '/tmp/65289b6f62b01a266799da33b910e29a20141204-5916-1h0v8yr20141204-5916-5w9rl4'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/65289b6f62b01a266799da33b910e29a20141204-5916-1h0v8yr[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/65289b6f62b01a266799da33b910e29a20141204-5916-1h0v8yr[0]'
+Command :: convert '/tmp/65289b6f62b01a266799da33b910e29a20141204-5916-1h0v8yr[0]' -auto-orient -resize "100x100>" '/tmp/65289b6f62b01a266799da33b910e29a20141204-5916-1h0v8yr20141204-5916-giw0uk'
+Command :: file -b --mime '/tmp/65289b6f62b01a266799da33b910e29a20141204-5916-1h0v8yr20141204-5916-giw0uk'
+  [1m[35m (0.4ms)[0m  BEGIN
+Command :: file -b --mime-type '/tmp/ee716c429120f3d7556b48f93296331020141204-5916-1jrpn6j'
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO `employees` (`addres`, `avatar_content_type`, `avatar_file_name`, `avatar_file_size`, `avatar_updated_at`, `birthdate`, `contract_type`, `created_at`, `email`, `lastnames`, `names`, `run`, `updated_at`, `weekly_hours`, `worker_id`) VALUES ('Embajador Quintana 4368', 'image/jpeg', 'yo.jpg', 6932, '2014-12-04 21:44:07', '2009-12-04', 'Diurno', '2014-12-04 21:44:08', 'mlandaetasanchez@gmail.com', 'Landaeta Sanchez', 'Mosheh-efra Osvaldo', '1-9', '2014-12-04 21:44:08', 45, '1')[0m
+Mysql2::Error: Field 'customer_id' doesn't have a default value: INSERT INTO `employees` (`addres`, `avatar_content_type`, `avatar_file_name`, `avatar_file_size`, `avatar_updated_at`, `birthdate`, `contract_type`, `created_at`, `email`, `lastnames`, `names`, `run`, `updated_at`, `weekly_hours`, `worker_id`) VALUES ('Embajador Quintana 4368', 'image/jpeg', 'yo.jpg', 6932, '2014-12-04 21:44:07', '2009-12-04', 'Diurno', '2014-12-04 21:44:08', 'mlandaetasanchez@gmail.com', 'Landaeta Sanchez', 'Mosheh-efra Osvaldo', '1-9', '2014-12-04 21:44:08', 45, '1')
+  [1m[35m (0.3ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 865ms
+
+ActiveRecord::StatementInvalid (Mysql2::Error: Field 'customer_id' doesn't have a default value: INSERT INTO `employees` (`addres`, `avatar_content_type`, `avatar_file_name`, `avatar_file_size`, `avatar_updated_at`, `birthdate`, `contract_type`, `created_at`, `email`, `lastnames`, `names`, `run`, `updated_at`, `weekly_hours`, `worker_id`) VALUES ('Embajador Quintana 4368', 'image/jpeg', 'yo.jpg', 6932, '2014-12-04 21:44:07', '2009-12-04', 'Diurno', '2014-12-04 21:44:08', 'mlandaetasanchez@gmail.com', 'Landaeta Sanchez', 'Mosheh-efra Osvaldo', '1-9', '2014-12-04 21:44:08', 45, '1')):
+  app/controllers/employees_controller.rb:26:in `create'
+
+
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.9ms)
+
+
+Started GET "/employees" for 127.0.0.1 at 2014-12-04 18:45:11 -0300
+Processing by EmployeesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCustomer Load (0.1ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mEmployee Load (0.2ms)[0m  [1mSELECT `employees`.* FROM `employees`[0m
+  Rendered employees/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.3ms)
+Completed 200 OK in 17ms (Views: 12.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 18:45:11 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 18:45:11 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 18:45:11 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 18:45:11 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 18:45:11 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 18:45:11 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 18:45:11 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 18:45:11 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 18:45:11 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 18:45:11 -0300
+
+
+Started GET "/employees" for 127.0.0.1 at 2014-12-04 20:07:24 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by EmployeesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.4ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mEmployee Load (0.2ms)[0m  SELECT `employees`.* FROM `employees`
+  Rendered employees/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+  Rendered layouts/_dashboard.html.erb (2.3ms)
+Completed 200 OK in 146ms (Views: 71.3ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 20:07:24 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 20:07:24 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 20:07:24 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 20:07:24 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 20:07:24 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 20:07:24 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 20:07:24 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 20:07:24 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 20:07:24 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 20:07:24 -0300
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2014-12-04 20:07:25 -0300
+Processing by EmployeesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT `customers`.* FROM `customers`[0m
+  Rendered employees/_form.html.erb (37.4ms)
+  Rendered employees/new.html.erb within layouts/application (38.7ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+  Rendered layouts/_dashboard.html.erb (2.6ms)
+Completed 200 OK in 59ms (Views: 49.0ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/employees" for 127.0.0.1 at 2014-12-04 20:07:44 -0300
+Processing by EmployeesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3CcUv2A0ReC32mCdfD9hUcK/CWaY9eIV1GP3CeJzlzY=", "employee"=>{"customer_id"=>"", "worker_id"=>"1", "contract_type"=>"Diurno", "weekly_hours"=>"45", "run"=>"1-9", "names"=>"Mosheh-efra Osvaldo", "lastnames"=>"Landaeta Sanchez", "email"=>"mlandaetasanchez@gmail.com", "addres"=>"Embajador Quintana 4368", "birthdate(1i)"=>"2009", "birthdate(2i)"=>"12", "birthdate(3i)"=>"4", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x007f4c90803250 @tempfile=#<Tempfile:/tmp/RackMultipart20141204-7098-1ufohh2>, @original_filename="yo.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"employee[avatar]\"; filename=\"yo.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Employee"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+Unpermitted parameters: customer_id
+Command :: file -b --mime-type '/tmp/615f1dcb49d3a7e5103fa9a00ca649ca20141204-7098-ds34zz'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/55760f091cf4bb56e1fc0bc7dac1408420141204-7098-18no2b7[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/55760f091cf4bb56e1fc0bc7dac1408420141204-7098-18no2b7[0]'
+Command :: convert '/tmp/55760f091cf4bb56e1fc0bc7dac1408420141204-7098-18no2b7[0]' -auto-orient -resize "300x300>" '/tmp/55760f091cf4bb56e1fc0bc7dac1408420141204-7098-18no2b720141204-7098-mao07f'
+Command :: file -b --mime '/tmp/55760f091cf4bb56e1fc0bc7dac1408420141204-7098-18no2b720141204-7098-mao07f'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/55760f091cf4bb56e1fc0bc7dac1408420141204-7098-18no2b7[0]' 2>/dev/null
+Command :: identify -format %m '/tmp/55760f091cf4bb56e1fc0bc7dac1408420141204-7098-18no2b7[0]'
+Command :: convert '/tmp/55760f091cf4bb56e1fc0bc7dac1408420141204-7098-18no2b7[0]' -auto-orient -resize "100x100>" '/tmp/55760f091cf4bb56e1fc0bc7dac1408420141204-7098-18no2b720141204-7098-16bpdxk'
+Command :: file -b --mime '/tmp/55760f091cf4bb56e1fc0bc7dac1408420141204-7098-18no2b720141204-7098-16bpdxk'
+  [1m[35m (0.4ms)[0m  BEGIN
+Command :: file -b --mime-type '/tmp/3a66356e95f2bc564923e333bd46ea9020141204-7098-mxwrn0'
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO `employees` (`addres`, `avatar_content_type`, `avatar_file_name`, `avatar_file_size`, `avatar_updated_at`, `birthdate`, `contract_type`, `created_at`, `customer_id`, `email`, `lastnames`, `names`, `run`, `updated_at`, `weekly_hours`, `worker_id`) VALUES ('Embajador Quintana 4368', 'image/jpeg', 'yo.jpg', 6932, '2014-12-04 23:07:44', '2009-12-04', 'Diurno', '2014-12-04 23:07:45', 1, 'mlandaetasanchez@gmail.com', 'Landaeta Sanchez', 'Mosheh-efra Osvaldo', '1-9', '2014-12-04 23:07:45', 45, '1')[0m
+  [1m[35m (53.3ms)[0m  COMMIT
+Redirected to http://0.0.0.0:3000/employees/2
+Completed 302 Found in 416ms (ActiveRecord: 54.9ms)
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:07:45 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCustomer Load (0.4ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mEmployee Load (0.7ms)[0m  [1mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1[0m
+  Rendered employees/show.html.erb within layouts/application (47.3ms)
+Completed 500 Internal Server Error in 56ms
+
+ActionView::Template::Error (undefined local variable or method `employee' for #<#<Class:0x00000003892f08>:0x007f4c90b9b318>):
+    65: 					</div>
+    66: 
+    67: <%= link_to 'Editar', edit_employee_path(@employee), :class => "btn btn-default" %>
+    68: <%= link_to 'Destruir', [employee.customer, employee], method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger" %>
+    69: <%= link_to 'Volver', employees_path, :class => "btn btn-link" %>
+    70: 
+    71: 				</div>
+  app/views/employees/show.html.erb:68:in `_app_views_employees_show_html_erb__1662025006178192496_69983411163220'
+
+
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.5ms)
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:08:24 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mEmployee Load (0.3ms)[0m  SELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1
+  [1m[36mCustomer Load (0.4ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 ORDER BY `customers`.`id` ASC LIMIT 1[0m
+  Rendered employees/show.html.erb within layouts/application (25.6ms)
+Completed 500 Internal Server Error in 34ms
+
+ActionView::Template::Error (undefined method `customer_employee_path' for #<#<Class:0x00000003892f08>:0x0000000333f0d8>):
+    65: 					</div>
+    66: 
+    67: <%= link_to 'Editar', edit_employee_path(@employee), :class => "btn btn-default" %>
+    68: <%= link_to 'Destruir', [@employee.customer, @employee], method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger" %>
+    69: <%= link_to 'Volver', employees_path, :class => "btn btn-link" %>
+    70: 
+    71: 				</div>
+  app/views/employees/show.html.erb:68:in `_app_views_employees_show_html_erb__1662025006178192496_26863460'
+
+
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.3ms)
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:08:52 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mEmployee Load (0.1ms)[0m  SELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1
+  Rendered employees/show.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.0ms)
+Completed 200 OK in 17ms (Views: 11.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 20:08:52 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 20:08:52 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 20:08:52 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 20:08:52 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 20:08:52 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 20:08:52 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 20:08:52 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 20:08:52 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 20:08:52 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 20:08:52 -0300
+
+
+Started GET "/employees" for 127.0.0.1 at 2014-12-04 20:09:01 -0300
+Processing by EmployeesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mEmployee Load (0.3ms)[0m  [1mSELECT `employees`.* FROM `employees`[0m
+  Rendered employees/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.0ms)
+Completed 200 OK in 16ms (Views: 13.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:12:37 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mEmployee Load (0.1ms)[0m  SELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1
+  Rendered employees/show.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.1ms)
+Completed 200 OK in 19ms (Views: 14.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:13:03 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mEmployee Load (0.3ms)[0m  [1mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1[0m
+  Rendered employees/show.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `avatar' for #<User:0x007f4c8c17bdf0>):
+    18: 																			<tr>
+    19: 										<td>
+    20: 										<!-- <= image_tag @user.avatar.url %> -->
+    21: 										<%= image_tag @user.avatar.url(:medium) %>
+    22: 										<!-- <= image_tag @user.avatar.url(:thumb) %> -->
+    23: 										</td>
+    24: 										</tr>
+  app/views/employees/show.html.erb:21:in `_app_views_employees_show_html_erb__1662025006178192496_69983372353340'
+
+
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /home/sylar/.rvm/gems/ruby-2.1.2/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.4ms)
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:13:20 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mEmployee Load (0.1ms)[0m  SELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1
+  Rendered employees/show.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.0ms)
+Completed 200 OK in 18ms (Views: 14.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 20:13:20 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 20:13:20 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 20:13:20 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 20:13:20 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 20:13:20 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 20:13:20 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 20:13:20 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 20:13:20 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 20:13:20 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 20:13:20 -0300
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:14:20 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCustomer Load (0.3ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mEmployee Load (0.2ms)[0m  [1mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1[0m
+  Rendered employees/show.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.0ms)
+Completed 200 OK in 17ms (Views: 11.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 20:14:20 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 20:14:20 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 20:14:20 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 20:14:20 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 20:14:20 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 20:14:20 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 20:14:20 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 20:14:20 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 20:14:20 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 20:14:20 -0300
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:14:59 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mEmployee Load (0.1ms)[0m  SELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1
+  Rendered employees/show.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.2ms)
+Completed 200 OK in 17ms (Views: 12.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 20:14:59 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 20:14:59 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 20:14:59 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 20:14:59 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 20:14:59 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 20:14:59 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 20:14:59 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 20:14:59 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 20:14:59 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 20:14:59 -0300
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:18:31 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mEmployee Load (0.4ms)[0m  [1mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1[0m
+  Rendered employees/show.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.0ms)
+Completed 200 OK in 21ms (Views: 14.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 20:18:31 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 20:18:31 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 20:18:31 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 20:18:31 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 20:18:31 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 20:18:31 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 20:18:31 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 20:18:31 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 20:18:31 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 20:18:31 -0300
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:19:19 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mEmployee Load (0.1ms)[0m  SELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1
+  Rendered employees/show.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.0ms)
+Completed 200 OK in 16ms (Views: 10.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 20:19:19 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 20:19:19 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 20:19:19 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 20:19:19 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 20:19:19 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 20:19:19 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 20:19:19 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 20:19:19 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 20:19:19 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 20:19:19 -0300
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:20:47 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mEmployee Load (0.2ms)[0m  [1mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1[0m
+  Rendered employees/show.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.0ms)
+Completed 200 OK in 17ms (Views: 11.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 20:20:47 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 20:20:47 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 20:20:47 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 20:20:47 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 20:20:47 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 20:20:47 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 20:20:47 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 20:20:47 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 20:20:47 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 20:20:47 -0300
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:22:23 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mEmployee Load (0.1ms)[0m  SELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1
+  Rendered employees/show.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.0ms)
+Completed 200 OK in 16ms (Views: 11.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 20:22:23 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 20:22:23 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 20:22:23 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 20:22:23 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 20:22:23 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 20:22:23 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 20:22:23 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 20:22:23 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 20:22:23 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 20:22:23 -0300
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:23:30 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mEmployee Load (0.2ms)[0m  [1mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1[0m
+  Rendered employees/show.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.1ms)
+Completed 200 OK in 17ms (Views: 11.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 20:23:30 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 20:23:30 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 20:23:30 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 20:23:30 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 20:23:30 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 20:23:30 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 20:23:30 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 20:23:30 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 20:23:30 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 20:23:30 -0300
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:24:13 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mEmployee Load (0.2ms)[0m  SELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1
+  Rendered employees/show.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.0ms)
+Completed 200 OK in 16ms (Views: 10.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 20:24:13 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 20:24:13 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 20:24:13 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 20:24:13 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 20:24:13 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 20:24:13 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 20:24:13 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 20:24:13 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 20:24:13 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 20:24:13 -0300
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:24:51 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mEmployee Load (0.2ms)[0m  [1mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1[0m
+  Rendered employees/show.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.0ms)
+Completed 200 OK in 17ms (Views: 10.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 20:24:51 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 20:24:51 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 20:24:51 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 20:24:51 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 20:24:51 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 20:24:52 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 20:24:52 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 20:24:52 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 20:24:52 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 20:24:52 -0300
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:26:54 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mEmployee Load (0.1ms)[0m  SELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1
+  Rendered employees/show.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.1ms)
+Completed 200 OK in 15ms (Views: 11.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 20:26:54 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 20:26:54 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 20:26:54 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 20:26:54 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 20:26:54 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 20:26:54 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 20:26:54 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 20:26:54 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 20:26:54 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 20:26:54 -0300
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:27:05 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCustomer Load (0.3ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mEmployee Load (0.2ms)[0m  [1mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1[0m
+  Rendered employees/show.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.0ms)
+Completed 200 OK in 18ms (Views: 12.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 20:27:05 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 20:27:05 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 20:27:05 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 20:27:05 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 20:27:05 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 20:27:05 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 20:27:05 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 20:27:05 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 20:27:05 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 20:27:05 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 20:27:12 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 20:27:12 -0300
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:27:45 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.3ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mEmployee Load (0.2ms)[0m  SELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1
+  Rendered employees/show.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.0ms)
+Completed 200 OK in 18ms (Views: 11.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 20:27:45 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 20:27:45 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 20:27:45 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 20:27:45 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 20:27:45 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 20:27:45 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 20:27:45 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 20:27:45 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 20:27:45 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 20:27:45 -0300
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:30:27 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mEmployee Load (0.2ms)[0m  [1mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1[0m
+  Rendered employees/show.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (0.9ms)
+Completed 200 OK in 16ms (Views: 10.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 20:30:27 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 20:30:27 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 20:30:27 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 20:30:27 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 20:30:27 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 20:30:27 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 20:30:27 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 20:30:27 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 20:30:27 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 20:30:27 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 20:30:49 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 20:30:49 -0300
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:33:01 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.3ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mEmployee Load (0.1ms)[0m  SELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1
+  Rendered employees/show.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+  Rendered layouts/_dashboard.html.erb (2.3ms)
+Completed 200 OK in 24ms (Views: 18.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 20:33:01 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 20:33:01 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 20:33:01 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 20:33:01 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 20:33:01 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 20:33:01 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 20:33:01 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 20:33:01 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 20:33:01 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 20:33:01 -0300
+
+
+Started GET "/employees" for 127.0.0.1 at 2014-12-04 20:34:36 -0300
+Processing by EmployeesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mEmployee Load (0.4ms)[0m  [1mSELECT `employees`.* FROM `employees`[0m
+  Rendered employees/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (2.3ms)
+Completed 200 OK in 22ms (Views: 18.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:35:11 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mEmployee Load (0.2ms)[0m  SELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1
+  Rendered employees/show.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.1ms)
+Completed 200 OK in 19ms (Views: 14.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:35:26 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCustomer Load (0.3ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mEmployee Load (0.1ms)[0m  [1mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1[0m
+  Rendered employees/show.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.0ms)
+Completed 200 OK in 17ms (Views: 10.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 20:35:26 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 20:35:26 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 20:35:26 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 20:35:26 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 20:35:26 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 20:35:26 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 20:35:26 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 20:35:26 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 20:35:26 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 20:35:26 -0300
+
+
+Started GET "/employees" for 127.0.0.1 at 2014-12-04 20:35:37 -0300
+Processing by EmployeesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mEmployee Load (0.2ms)[0m  SELECT `employees`.* FROM `employees`
+  Rendered employees/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (2.0ms)
+Completed 200 OK in 20ms (Views: 16.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 20:35:40 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 20:35:40 -0300
+
+
+Started GET "/employees" for 127.0.0.1 at 2014-12-04 20:36:50 -0300
+Processing by EmployeesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mEmployee Load (0.3ms)[0m  [1mSELECT `employees`.* FROM `employees`[0m
+  Rendered employees/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.0ms)
+Completed 200 OK in 16ms (Views: 12.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 20:36:50 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 20:36:50 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 20:36:50 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 20:36:50 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 20:36:50 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 20:36:50 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 20:36:50 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 20:36:50 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 20:36:50 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 20:36:50 -0300
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:36:52 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mEmployee Load (0.2ms)[0m  SELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1
+  Rendered employees/show.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.0ms)
+Completed 200 OK in 19ms (Views: 13.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:37:11 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mEmployee Load (0.2ms)[0m  [1mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1[0m
+  Rendered employees/show.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.0ms)
+Completed 200 OK in 17ms (Views: 12.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 20:37:11 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 20:37:11 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 20:37:11 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 20:37:11 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 20:37:11 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 20:37:11 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 20:37:11 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 20:37:11 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 20:37:11 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 20:37:11 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 20:37:44 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 20:37:44 -0300
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:38:13 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (1.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mEmployee Load (0.1ms)[0m  SELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1
+  Rendered employees/show.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+  Rendered layouts/_dashboard.html.erb (1.7ms)
+Completed 200 OK in 20ms (Views: 12.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 20:38:13 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 20:38:13 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 20:38:13 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 20:38:13 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 20:38:13 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 20:38:13 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 20:38:13 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 20:38:13 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 20:38:13 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 20:38:13 -0300
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:39:59 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCustomer Load (0.1ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mEmployee Load (0.1ms)[0m  [1mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1[0m
+  Rendered employees/show.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.0ms)
+Completed 200 OK in 16ms (Views: 10.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 20:39:59 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 20:39:59 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 20:39:59 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 20:39:59 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 20:39:59 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 20:39:59 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 20:39:59 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 20:39:59 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 20:39:59 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 20:39:59 -0300
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:40:44 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mEmployee Load (0.1ms)[0m  SELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1
+  Rendered employees/show.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.0ms)
+Completed 200 OK in 15ms (Views: 10.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 20:40:44 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 20:40:44 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 20:40:44 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 20:40:44 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 20:40:44 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 20:40:44 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 20:40:44 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 20:40:44 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 20:40:44 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 20:40:44 -0300
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:41:30 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCustomer Load (0.1ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mEmployee Load (0.1ms)[0m  [1mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1[0m
+  Rendered employees/show.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.0ms)
+Completed 200 OK in 17ms (Views: 11.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 20:41:30 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 20:41:30 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 20:41:30 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 20:41:30 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 20:41:30 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 20:41:30 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 20:41:30 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 20:41:30 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 20:41:30 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 20:41:30 -0300
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:41:50 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mEmployee Load (0.8ms)[0m  SELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1
+  Rendered employees/show.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.0ms)
+Completed 200 OK in 20ms (Views: 13.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 20:41:50 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 20:41:50 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 20:41:50 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 20:41:50 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 20:41:50 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 20:41:50 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 20:41:50 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 20:41:50 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 20:41:50 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 20:41:50 -0300
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:42:22 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mEmployee Load (0.2ms)[0m  [1mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1[0m
+  Rendered employees/show.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.0ms)
+Completed 200 OK in 18ms (Views: 11.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 20:42:22 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 20:42:22 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 20:42:22 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 20:42:22 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 20:42:22 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 20:42:22 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 20:42:22 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 20:42:22 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 20:42:22 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 20:42:22 -0300
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:43:05 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mEmployee Load (0.2ms)[0m  SELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1
+  Rendered employees/show.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.6ms)
+Completed 200 OK in 16ms (Views: 11.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 20:43:05 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 20:43:05 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 20:43:05 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 20:43:05 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 20:43:05 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 20:43:05 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 20:43:05 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 20:43:05 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 20:43:05 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 20:43:05 -0300
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:43:13 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCustomer Load (0.1ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mEmployee Load (0.2ms)[0m  [1mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1[0m
+  Rendered employees/show.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.0ms)
+Completed 200 OK in 19ms (Views: 13.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 20:43:13 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 20:43:13 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 20:43:13 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 20:43:13 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 20:43:13 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 20:43:13 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 20:43:13 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 20:43:13 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 20:43:13 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 20:43:13 -0300
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:44:37 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mEmployee Load (0.1ms)[0m  SELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1
+  Rendered employees/show.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (0.9ms)
+Completed 200 OK in 15ms (Views: 10.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 20:44:38 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 20:44:38 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 20:44:38 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 20:44:38 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 20:44:38 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 20:44:38 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 20:44:38 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 20:44:38 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 20:44:38 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 20:44:38 -0300
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:44:51 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCustomer Load (0.1ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mEmployee Load (0.2ms)[0m  [1mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1[0m
+  Rendered employees/show.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.0ms)
+Completed 200 OK in 16ms (Views: 11.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 20:44:51 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 20:44:51 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 20:44:51 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 20:44:51 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 20:44:51 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 20:44:52 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 20:44:52 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 20:44:52 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 20:44:52 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 20:44:52 -0300
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:45:12 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.3ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mEmployee Load (0.1ms)[0m  SELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1
+  Rendered employees/show.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.5ms)
+Completed 200 OK in 17ms (Views: 12.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 20:45:12 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 20:45:12 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 20:45:12 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 20:45:12 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 20:45:12 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 20:45:12 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 20:45:12 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 20:45:12 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 20:45:12 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 20:45:12 -0300
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:45:23 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mEmployee Load (0.2ms)[0m  [1mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1[0m
+  Rendered employees/show.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.0ms)
+Completed 200 OK in 17ms (Views: 11.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 20:45:23 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 20:45:23 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 20:45:23 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 20:45:23 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 20:45:23 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 20:45:23 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 20:45:23 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 20:45:23 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 20:45:23 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 20:45:23 -0300
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:45:36 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mEmployee Load (0.2ms)[0m  SELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1
+  Rendered employees/show.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.1ms)
+Completed 200 OK in 17ms (Views: 12.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 20:45:36 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 20:45:36 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 20:45:36 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 20:45:36 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 20:45:36 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 20:45:36 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 20:45:36 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 20:45:36 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 20:45:36 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 20:45:36 -0300
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:45:47 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCustomer Load (0.1ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mEmployee Load (0.1ms)[0m  [1mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1[0m
+  Rendered employees/show.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.6ms)
+Completed 200 OK in 23ms (Views: 19.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 20:45:48 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 20:45:48 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 20:45:48 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 20:45:48 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 20:45:48 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 20:45:48 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 20:45:48 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 20:45:48 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 20:45:48 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 20:45:48 -0300
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:45:58 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mEmployee Load (0.2ms)[0m  SELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1
+  Rendered employees/show.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.0ms)
+Completed 200 OK in 18ms (Views: 13.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 20:45:58 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 20:45:58 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 20:45:58 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 20:45:58 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 20:45:58 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 20:45:58 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 20:45:58 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 20:45:58 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 20:45:58 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 20:45:58 -0300
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:46:21 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mEmployee Load (0.5ms)[0m  [1mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1[0m
+  Rendered employees/show.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.0ms)
+Completed 200 OK in 19ms (Views: 13.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 20:46:21 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 20:46:21 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 20:46:21 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 20:46:21 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 20:46:21 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 20:46:21 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 20:46:21 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 20:46:21 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 20:46:21 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 20:46:21 -0300
+
+
+Started GET "/employees" for 127.0.0.1 at 2014-12-04 20:46:25 -0300
+Processing by EmployeesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mEmployee Load (0.2ms)[0m  SELECT `employees`.* FROM `employees`
+  Rendered employees/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.1ms)
+Completed 200 OK in 18ms (Views: 14.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:46:26 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mEmployee Load (0.2ms)[0m  [1mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1[0m
+  Rendered employees/show.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.1ms)
+Completed 200 OK in 17ms (Views: 12.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:47:15 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.3ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mEmployee Load (0.2ms)[0m  SELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1
+  Rendered employees/show.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.0ms)
+Completed 200 OK in 17ms (Views: 11.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 20:47:15 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 20:47:15 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 20:47:15 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 20:47:15 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 20:47:15 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 20:47:15 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 20:47:15 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 20:47:15 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 20:47:15 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 20:47:15 -0300
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:47:23 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCustomer Load (0.5ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mEmployee Load (0.2ms)[0m  [1mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1[0m
+  Rendered employees/show.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.0ms)
+Completed 200 OK in 16ms (Views: 10.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 20:47:23 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 20:47:23 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 20:47:23 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 20:47:23 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 20:47:23 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 20:47:23 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 20:47:23 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 20:47:23 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 20:47:23 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 20:47:23 -0300
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:48:12 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mEmployee Load (0.2ms)[0m  SELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1
+  Rendered employees/show.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.0ms)
+Completed 200 OK in 15ms (Views: 10.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 20:48:12 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 20:48:12 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 20:48:13 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 20:48:13 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 20:48:13 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 20:48:13 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 20:48:13 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 20:48:13 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 20:48:13 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 20:48:13 -0300
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 20:54:35 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCustomer Load (0.1ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mEmployee Load (0.1ms)[0m  [1mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1[0m
+  Rendered employees/show.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (0.9ms)
+Completed 200 OK in 14ms (Views: 10.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 20:54:35 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 20:54:35 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 20:54:35 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 20:54:35 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 20:54:35 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 20:54:35 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 20:54:35 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 20:54:35 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 20:54:35 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 20:54:35 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateBranchOffices (20141205000946)
+  [1m[35m (140.5ms)[0m  CREATE TABLE `branch_offices` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `country` varchar(255), `region` varchar(255), `address` varchar(255), `customer_id` int(11) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (154.2ms)[0m  [1mCREATE INDEX `index_branch_offices_on_customer_id` ON `branch_offices` (`customer_id`) [0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20141205000946')[0m
+  [1m[35m (37.1ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+
+Started GET "/employees" for 127.0.0.1 at 2014-12-04 21:22:11 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by EmployeesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.3ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mEmployee Load (0.5ms)[0m  SELECT `employees`.* FROM `employees` WHERE `employees`.`customer_id` = 1
+  Rendered employees/index.html.erb within layouts/application (37.8ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+  Rendered layouts/_dashboard.html.erb (2.2ms)
+Completed 200 OK in 229ms (Views: 153.4ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/assets/branch_offices.js?body=1" for 127.0.0.1 at 2014-12-04 21:22:11 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 21:22:11 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 21:22:11 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 21:22:11 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 21:22:11 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 21:22:11 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 21:22:11 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 21:22:11 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 21:22:11 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 21:22:11 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 21:22:11 -0300
+
+
+Started GET "/employees" for 127.0.0.1 at 2014-12-04 21:22:13 -0300
+Processing by EmployeesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mEmployee Load (0.2ms)[0m  [1mSELECT `employees`.* FROM `employees` WHERE `employees`.`customer_id` = 1[0m
+  Rendered employees/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.6ms)
+Completed 200 OK in 18ms (Views: 13.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 21:22:13 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 21:22:13 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 21:22:13 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 21:22:13 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 21:22:13 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 21:22:13 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 21:22:13 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 21:22:13 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 21:22:13 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 21:22:13 -0300
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 21:22:17 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mEmployee Load (0.2ms)[0m  SELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1
+  Rendered employees/show.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+  Rendered layouts/_dashboard.html.erb (2.2ms)
+Completed 200 OK in 20ms (Views: 15.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 21:22:59 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCustomer Load (0.3ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mEmployee Load (0.2ms)[0m  [1mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1[0m
+  Rendered employees/show.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.0ms)
+Completed 200 OK in 18ms (Views: 12.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 21:22:59 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 21:22:59 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 21:22:59 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 21:22:59 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 21:22:59 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 21:22:59 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 21:22:59 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 21:22:59 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 21:22:59 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 21:22:59 -0300
+
+
+Started GET "/employees" for 127.0.0.1 at 2014-12-04 21:23:09 -0300
+Processing by EmployeesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mEmployee Load (0.2ms)[0m  SELECT `employees`.* FROM `employees` WHERE `employees`.`customer_id` = 1
+  Rendered employees/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.8ms)
+Completed 200 OK in 18ms (Views: 14.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/employees/new" for 127.0.0.1 at 2014-12-04 21:23:11 -0300
+Processing by EmployeesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mCustomer Load (0.4ms)[0m  [1mSELECT `customers`.* FROM `customers`[0m
+  Rendered employees/_form.html.erb (29.9ms)
+  Rendered employees/new.html.erb within layouts/application (32.0ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.4ms)
+Completed 200 OK in 48ms (Views: 43.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/employees" for 127.0.0.1 at 2014-12-04 21:23:14 -0300
+Processing by EmployeesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mEmployee Load (0.2ms)[0m  SELECT `employees`.* FROM `employees` WHERE `employees`.`customer_id` = 1
+  Rendered employees/index.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (2.1ms)
+Completed 200 OK in 25ms (Views: 20.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 21:26:18 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCustomer Load (0.1ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mEmployee Load (0.1ms)[0m  [1mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1[0m
+  Rendered employees/show.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.1ms)
+Completed 200 OK in 19ms (Views: 14.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/branch_offices" for 127.0.0.1 at 2014-12-04 21:26:36 -0300
+Processing by BranchOfficesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mBranchOffice Load (0.3ms)[0m  SELECT `branch_offices`.* FROM `branch_offices`
+  Rendered branch_offices/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.2ms)
+Completed 200 OK in 17ms (Views: 12.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 21:26:36 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 21:26:36 -0300
+
+
+Started GET "/assets/branch_offices.js?body=1" for 127.0.0.1 at 2014-12-04 21:26:36 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 21:26:36 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 21:26:36 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 21:26:36 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 21:26:36 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 21:26:36 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 21:26:36 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 21:26:36 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 21:26:36 -0300
+
+
+Started GET "/branch_offices" for 127.0.0.1 at 2014-12-04 21:29:29 -0300
+Processing by BranchOfficesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCustomer Load (0.1ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mBranchOffice Load (0.2ms)[0m  [1mSELECT `branch_offices`.* FROM `branch_offices`[0m
+  Rendered branch_offices/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.8ms)
+Completed 200 OK in 14ms (Views: 10.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 21:29:29 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 21:29:29 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 21:29:29 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 21:29:29 -0300
+
+
+Started GET "/assets/branch_offices.js?body=1" for 127.0.0.1 at 2014-12-04 21:29:29 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 21:29:29 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 21:29:29 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 21:29:29 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 21:29:29 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 21:29:29 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 21:29:29 -0300
+
+
+Started GET "/branch_offices" for 127.0.0.1 at 2014-12-04 21:29:32 -0300
+Processing by BranchOfficesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mBranchOffice Load (0.3ms)[0m  SELECT `branch_offices`.* FROM `branch_offices`
+  Rendered branch_offices/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (2.8ms)
+Completed 200 OK in 23ms (Views: 18.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/employees" for 127.0.0.1 at 2014-12-04 21:29:34 -0300
+Processing by EmployeesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mEmployee Load (0.2ms)[0m  [1mSELECT `employees`.* FROM `employees` WHERE `employees`.`customer_id` = 1[0m
+  Rendered employees/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.6ms)
+Completed 200 OK in 20ms (Views: 16.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/branch_offices" for 127.0.0.1 at 2014-12-04 21:29:34 -0300
+Processing by BranchOfficesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mBranchOffice Load (0.2ms)[0m  SELECT `branch_offices`.* FROM `branch_offices`
+  Rendered branch_offices/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.2ms)
+Completed 200 OK in 18ms (Views: 13.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/branch_offices" for 127.0.0.1 at 2014-12-04 21:30:31 -0300
+Processing by BranchOfficesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mBranchOffice Load (0.1ms)[0m  [1mSELECT `branch_offices`.* FROM `branch_offices`[0m
+  Rendered branch_offices/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.0ms)
+Completed 200 OK in 15ms (Views: 10.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 21:30:31 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 21:30:31 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 21:30:31 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 21:30:31 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 21:30:31 -0300
+
+
+Started GET "/assets/branch_offices.js?body=1" for 127.0.0.1 at 2014-12-04 21:30:31 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 21:30:31 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 21:30:31 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 21:30:31 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 21:30:31 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 21:30:31 -0300
+
+
+Started GET "/branch_offices/new" for 127.0.0.1 at 2014-12-04 21:30:32 -0300
+Processing by BranchOfficesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mCustomer Load (0.4ms)[0m  SELECT `customers`.* FROM `customers`
+  Rendered branch_offices/_form.html.erb (38.6ms)
+  Rendered branch_offices/new.html.erb within layouts/application (40.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.2ms)
+Completed 200 OK in 58ms (Views: 50.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/branch_offices" for 127.0.0.1 at 2014-12-04 21:30:40 -0300
+Processing by BranchOfficesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mBranchOffice Load (0.3ms)[0m  [1mSELECT `branch_offices`.* FROM `branch_offices`[0m
+  Rendered branch_offices/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.7ms)
+Completed 200 OK in 21ms (Views: 17.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/branch_offices" for 127.0.0.1 at 2014-12-04 21:31:35 -0300
+Processing by BranchOfficesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mBranchOffice Load (0.1ms)[0m  SELECT `branch_offices`.* FROM `branch_offices`
+  Rendered branch_offices/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.1ms)
+Completed 200 OK in 15ms (Views: 10.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 21:31:35 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 21:31:35 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 21:31:35 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 21:31:35 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 21:31:35 -0300
+
+
+Started GET "/assets/branch_offices.js?body=1" for 127.0.0.1 at 2014-12-04 21:31:35 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 21:31:35 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 21:31:35 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 21:31:35 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 21:31:35 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 21:31:35 -0300
+
+
+Started GET "/branch_offices/new" for 127.0.0.1 at 2014-12-04 21:32:24 -0300
+Processing by BranchOfficesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  Rendered branch_offices/_form.html.erb (10.6ms)
+  Rendered branch_offices/new.html.erb within layouts/application (12.2ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.1ms)
+Completed 200 OK in 28ms (Views: 24.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/branch_offices" for 127.0.0.1 at 2014-12-04 21:33:26 -0300
+Processing by BranchOfficesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3CcUv2A0ReC32mCdfD9hUcK/CWaY9eIV1GP3CeJzlzY=", "branch_office"=>{"name"=>"Casa central", "country"=>"Chile", "region"=>"Metropolitana", "address"=>"Rafael Cañas #114 Oficina 1A. Metro Salvador Providencia"}, "commit"=>"Create Branch office"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `branch_offices` (`address`, `country`, `created_at`, `customer_id`, `name`, `region`, `updated_at`) VALUES ('Rafael Cañas #114 Oficina 1A. Metro Salvador Providencia', 'Chile', '2014-12-05 00:33:26', 1, 'Casa central', 'Metropolitana', '2014-12-05 00:33:26')
+  [1m[36m (152.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/branch_offices/1
+Completed 302 Found in 167ms (ActiveRecord: 153.8ms)
+
+
+Started GET "/branch_offices/1" for 127.0.0.1 at 2014-12-04 21:33:26 -0300
+Processing by BranchOfficesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mBranchOffice Load (0.4ms)[0m  SELECT `branch_offices`.* FROM `branch_offices` WHERE `branch_offices`.`id` = 1 LIMIT 1
+  [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 ORDER BY `customers`.`id` ASC LIMIT 1[0m
+  Rendered branch_offices/show.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.2ms)
+Completed 200 OK in 23ms (Views: 17.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 21:33:26 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 21:33:26 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 21:33:26 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 21:33:26 -0300
+
+
+Started GET "/assets/branch_offices.js?body=1" for 127.0.0.1 at 2014-12-04 21:33:26 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 21:33:26 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 21:33:26 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 21:33:26 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 21:33:26 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 21:33:26 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 21:33:26 -0300
+
+
+Started GET "/branch_offices/1" for 127.0.0.1 at 2014-12-04 21:34:33 -0300
+Processing by BranchOfficesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mBranchOffice Load (0.2ms)[0m  SELECT `branch_offices`.* FROM `branch_offices` WHERE `branch_offices`.`id` = 1 LIMIT 1
+  [1m[36mCustomer Load (0.1ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 ORDER BY `customers`.`id` ASC LIMIT 1[0m
+  Rendered branch_offices/show.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.1ms)
+Completed 200 OK in 18ms (Views: 11.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 21:34:33 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 21:34:33 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 21:34:33 -0300
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-12-04 21:34:33 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 21:34:33 -0300
+
+
+Started GET "/assets/branch_offices.js?body=1" for 127.0.0.1 at 2014-12-04 21:34:33 -0300
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at 2014-12-04 21:34:33 -0300
+
+
+Started GET "/assets/employees.js?body=1" for 127.0.0.1 at 2014-12-04 21:34:33 -0300
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-12-04 21:34:33 -0300
+
+
+Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-04 21:34:33 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 21:34:33 -0300
+
+
+Started GET "/employees" for 127.0.0.1 at 2014-12-04 21:34:40 -0300
+Processing by EmployeesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[35mEmployee Load (0.3ms)[0m  SELECT `employees`.* FROM `employees` WHERE `employees`.`customer_id` = 1
+  Rendered employees/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.3ms)
+Completed 200 OK in 19ms (Views: 15.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/employees/2" for 127.0.0.1 at 2014-12-04 21:34:47 -0300
+Processing by EmployeesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCustomer Load (0.1ms)[0m  SELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1
+  [1m[36mEmployee Load (0.2ms)[0m  [1mSELECT `employees`.* FROM `employees` WHERE `employees`.`id` = 2 LIMIT 1[0m
+  Rendered employees/show.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+  Rendered layouts/_dashboard.html.erb (1.1ms)
+Completed 200 OK in 17ms (Views: 13.1ms | ActiveRecord: 0.5ms)

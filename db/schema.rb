@@ -11,7 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141204205817) do
+ActiveRecord::Schema.define(version: 20141205000946) do
+
+  create_table "branch_offices", force: true do |t|
+    t.string   "name"
+    t.string   "country"
+    t.string   "region"
+    t.string   "address"
+    t.integer  "customer_id", null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "branch_offices", ["customer_id"], name: "index_branch_offices_on_customer_id", using: :btree
 
   create_table "customers", force: true do |t|
     t.string   "name"
@@ -33,9 +45,13 @@ ActiveRecord::Schema.define(version: 20141204205817) do
     t.date     "birthdate"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "customer_id",   null: false
+    t.integer  "customer_id",         null: false
     t.integer  "weekly_hours"
     t.text     "contract_type"
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
   end
 
   add_index "employees", ["customer_id"], name: "index_employees_on_customer_id", using: :btree

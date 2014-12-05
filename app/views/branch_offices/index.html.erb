@@ -1,0 +1,49 @@
+
+<h2 class="page-title page-title-green">
+  <span class="glyphicon glyphicon-tower"></span>
+  Sucursales
+</h2>
+
+<div class="page-buttons clearfix">
+  <%= link_to 'New Branch office', new_branch_office_path, :class => "btn btn-primary float-left" %>
+</div>
+
+<div class="page-body">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <div class="table-responsive">
+
+        <table class="table table-hover">
+          <thead>
+            <tr>
+                              <th>Name</th>
+                              <th>Country</th>
+                              <th>Region</th>
+                              <th>Address</th>
+                              <th>Customer</th>
+                            <th></th>              
+            </tr>
+          </thead>
+
+          <tbody>
+            <% @branch_offices.each do |branch_office| %>
+              <tr>
+                                    <td><%= branch_office.name %></td>
+                                    <td><%= branch_office.country %></td>
+                                    <td><%= branch_office.region %></td>
+                                    <td><%= branch_office.address %></td>
+                                    <td><%= branch_office.customer.name %></td>
+                                <td><%= link_to 'Detail', branch_office %></td>
+                <!-- <td><%= link_to 'Edit', edit_branch_office_path(branch_office) %></td>
+                <td><%= link_to 'Destroy', branch_office, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>

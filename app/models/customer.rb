@@ -4,6 +4,7 @@ class Customer < ActiveRecord::Base
 	include Exportable
 
 	has_many :employees
+	has_many :branch_offices
 		
 	# Validations
 			# validates :name, <validations>
