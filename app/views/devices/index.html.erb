@@ -1,0 +1,49 @@
+
+<h2 class="page-title page-title-green">
+  <span class="glyphicon glyphicon-hdd"></span>
+  Aparatos inteligentes
+</h2>
+
+<div class="page-buttons clearfix">
+  <%= link_to 'New Device', new_employee_device_path, :class => "btn btn-primary float-left" %>
+</div>
+
+<div class="page-body">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <div class="table-responsive">
+
+        <table class="table table-hover">
+          <thead>
+            <tr>
+                              <th>Meid</th>
+                              <th>Esn</th>
+                              <th>Imei</th>
+                              <th>Wlanmacaddress</th>
+                              <th>Employee</th>
+                            <th></th>              
+            </tr>
+          </thead>
+
+          <tbody>
+            <% @employee.devices.each do |device| %>
+              <tr>
+                                    <td><%= device.meid %></td>
+                                    <td><%= device.esn %></td>
+                                    <td><%= device.imei %></td>
+                                    <td><%= device.wlanMacAddress %></td>
+                                    <td><%= device.employee.run %></td>
+                                <td><%= link_to '', employee_device_path(@employee, device), :class => "glyphicon glyphicon-eye-open" %></td>
+                <!-- <td><= link_to 'Edit', edit_device_path(device) %></td>
+                <td><= link_to 'Destroy', device, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>

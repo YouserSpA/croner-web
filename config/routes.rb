@@ -1,8 +1,11 @@
 CronerWebApp::Application.routes.draw do
 
+
   resources :branch_offices
 
-  resources :employees
+  resources :employees do
+    resources :devices
+  end
 
   resources :customers
 

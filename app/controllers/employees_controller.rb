@@ -3,7 +3,7 @@ class EmployeesController < ApplicationController
 
   # GET /employees
   def index
-    @employees = Employee.all
+    # @employees = Employee.all
   end
 
   # GET /employees/1

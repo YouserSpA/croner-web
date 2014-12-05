@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141205000946) do
+ActiveRecord::Schema.define(version: 20141205005000) do
 
   create_table "branch_offices", force: true do |t|
     t.string   "name"
@@ -34,6 +34,18 @@ ActiveRecord::Schema.define(version: 20141205000946) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "devices", force: true do |t|
+    t.string   "meid"
+    t.string   "esn"
+    t.string   "imei"
+    t.string   "wlanMacAddress"
+    t.integer  "employee_id",    null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "devices", ["employee_id"], name: "index_devices_on_employee_id", using: :btree
 
   create_table "employees", force: true do |t|
     t.string   "worker_id"

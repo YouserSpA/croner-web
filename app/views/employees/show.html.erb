@@ -69,13 +69,75 @@
 
 		<div class="col-md-4">
 			<div class="panel panel-success">
-				<div class="panel-heading">Registros asistenciales</div>
+				<div class="panel-heading">Smart-Devices</div>
 				<div class="panel-body">
+					<div class="table-responsive">
+						<div class="page-buttons clearfix">
+						  <%= link_to 'Nuevo dispositivo', new_employee_device_path(@employee), :class => "btn btn-primary float-left" %>
+						</div>
+				        <table class="table table-hover">
+				          <thead>
+				            <tr>
+								<th>Imei</th>
+	                            <th></th>              
+				            </tr>
+				          </thead>
 
-				</div>
+				          <tbody>
+				            <% @employee.devices.each do |device| %>
+				              	<tr>
+                                	<td><%= device.imei %></td>
+                               		<td>
+		                                <!-- 	<= link_to '', employee_device_path(@employee, device), :class => "glyphicon glyphicon-eye-open" %> -->
+		                                <button type="button" class="glyphicon glyphicon-eye-open" data-toggle="modal" data-target=".bs-example-modal-sm"> </button>
+	                                </td>
+
+
+<!-- Modal para el detalle del smart-device -->
+
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+    	<div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+	        <h4 class="modal-title">Detalle del dispositivo inteligente</h4>
+      	</div>
+		<div class="panel panel-success">
+			<div class="panel-body">				
+  
+				<b>Meid:</b> <%= device.meid %>	<br />
+				<b>Esn:</b> <%= device.esn %>	<br />
+				<b>Imei:</b> <%= device.imei %>	<br />
+				<b>Wlanmacaddress:</b> <%= device.wlanMacAddress %>	<br />
 			</div>
 		</div>
 
+    </div>
+  </div>
+</div>
+				                <!-- <td><= link_to 'Edit', edit_device_path(device) %></td>
+				                <td><= link_to 'Destroy', device, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+				              </tr>
+				            <% end %>
+				          </tbody>
+				        </table>
+
+				      </div>
+				    </div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="panel panel-success">
+					<div class="panel-heading">Registros asistenciales</div>
+					<div class="panel-body">
+
+					</div>
+				</div>
+			</div>
+		</div> <!-- row -->
+
+
+		
 	</div>
 	
 </div>

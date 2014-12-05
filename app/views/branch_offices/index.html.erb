@@ -26,16 +26,16 @@
           </thead>
 
           <tbody>
-            <% @branch_offices.each do |branch_office| %>
+            <% @customer.branch_offices.each do |branch_office| %>
               <tr>
                                     <td><%= branch_office.name %></td>
                                     <td><%= branch_office.country %></td>
                                     <td><%= branch_office.region %></td>
                                     <td><%= branch_office.address %></td>
                                     <td><%= branch_office.customer.name %></td>
-                                <td><%= link_to 'Detail', branch_office %></td>
-                <!-- <td><%= link_to 'Edit', edit_branch_office_path(branch_office) %></td>
-                <td><%= link_to 'Destroy', branch_office, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+                                <td><%= link_to '', branch_office, :class => "btn btn-default glyphicon glyphicon-eye-open" %></td>
+                <!-- <td><= link_to 'Edit', edit_branch_office_path(branch_office) %></td>
+                <td><= link_to 'Destroy', branch_office, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
               </tr>
             <% end %>
           </tbody>
