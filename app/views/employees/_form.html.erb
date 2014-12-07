@@ -11,15 +11,19 @@
 </div>
 <% end %>
 
-<div class="form-group">
-          <%= f.label :customer_id %>
-          <%= select("employee", "customer_id", Customer.all.collect {|p| [ p.name, p.id ] }, {include_blank: 'None'}) %>
-        </div>
+<!-- <div class="form-group">
+          <= f.label :customer_id %>
+          <= select("employee", "customer_id", Customer.all.collect {|p| [ p.name, p.id ] }, {include_blank: 'None'}) %>
+        </div> -->
 
 <div class="form-group">
                 <%= f.label :worker_id %>
             <%= f.text_field :worker_id, :class => "form-control" %>
     </div>
+<!-- <div class="form-group">
+                <= f.label :branch_office_id %>
+            <= f.collection_select :branch_office_id, @customer.branch_offices, :id, :name, prompt: true, :class => 'form-control'  %>
+</div> -->
 <div class="form-group">
                 <%= f.label :contract_type %>
             <%= f.text_field :contract_type, :class => "form-control" %>

@@ -1,0 +1,33 @@
+<%= form_for([@employee, @employee.attendances.build]) do |f| %>
+<% if @attendance.errors.any? %>
+<div id="error_explanation">
+    <h2><%= pluralize(@attendance.errors.count, "error") %> prohibited this attendance from being saved:</h2>
+
+    <ul>
+        <% @attendance.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+        <% end %>
+    </ul>
+</div>
+<% end %>
+
+<div class="form-group">
+                <%= f.label :event %>
+            <%= f.text_field :event, :class => "form-control" %>
+    </div>
+<div class="form-group">
+                <%= f.label :location %>
+            <%= f.text_field :location, :class => "form-control" %>
+    </div>
+<div class="form-group">
+                <%= f.label :marked_at %>
+            <%= f.datetime_select :marked_at, :class => "form-control" %>
+    </div>
+<div class="form-group">
+                <%= f.label :employee_id %>
+            <%= f.collection_select :employee_id, Employee.all, :id, :run, prompt: true, :class => 'form-control'  %>
+    </div>
+<div class="actions">
+    <%= f.submit :class => "btn btn-success" %>
+</div>
+<% end %>

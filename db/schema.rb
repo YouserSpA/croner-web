@@ -11,7 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141205005000) do
+ActiveRecord::Schema.define(version: 20141207214327) do
+
+  create_table "attendances", force: true do |t|
+    t.string   "event"
+    t.string   "location"
+    t.datetime "marked_at"
+    t.integer  "employee_id", null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "attendances", ["employee_id"], name: "index_attendances_on_employee_id", using: :btree
 
   create_table "branch_offices", force: true do |t|
     t.string   "name"
@@ -90,5 +101,16 @@ ActiveRecord::Schema.define(version: 20141205005000) do
   add_index "users", ["customer_id"], name: "index_users_on_customer_id", using: :btree
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+
+  create_table "workplaces", force: true do |t|
+    t.integer  "branch_office_id", null: false
+    t.integer  "employee_id",      null: false
+    t.datetime "working_since"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "workplaces", ["branch_office_id"], name: "index_workplaces_on_branch_office_id", using: :btree
+  add_index "workplaces", ["employee_id"], name: "index_workplaces_on_employee_id", using: :btree
 
 end

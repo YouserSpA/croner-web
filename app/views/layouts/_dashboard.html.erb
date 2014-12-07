@@ -26,7 +26,11 @@
 						</li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
-						<li><%= link_to 'Cerrar Sesión', destroy_user_session_path, :method=> :delete %></li>
+						<li>
+							<%= link_to destroy_user_session_path, :method=> :delete do%>
+								<i class="glyphicon glyphicon-log-out"></i>Cerrar Sesión
+							<% end %>
+						</li>
 					</ul>
 				</div>
 			</nav>

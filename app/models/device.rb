@@ -3,7 +3,7 @@ class Device < ActiveRecord::Base
 	include Importable
 	include Exportable
 
-	  		belongs_to :employee
+	belongs_to :employee
 		
 	# Validations
 			# validates :meid, <validations>

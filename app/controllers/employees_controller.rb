@@ -21,12 +21,18 @@ class EmployeesController < ApplicationController
 
   # POST /employees
   def create
+    # @branch_office = @customer.branch_offices.find(params[:branch_office_id])
+    
     @employee = @customer.employees.new(employee_params)
 
-    if @employee.save
-      redirect_to @employee, notice: 'Employee was successfully created.'
+    # @workerplace = Workplace.new
+    # @workerplace.employee = @employee
+    # @workerplace.branch_office = @branch_office
+
+     if @employee.save # and @workerplace.save
+      redirect_to @employee, notice: 'Empleado registrado satisfactoriamente.'
     else
-      render :new
+      render :new, notice: 'No se pudo registrar el empleado.'
     end
   end
 
@@ -54,6 +60,6 @@ class EmployeesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def employee_params
-      params.require(:employee).permit(:worker_id, :run, :names, :lastnames, :email, :addres, :birthdate, :contract_type, :weekly_hours, :avatar)
+      params.require(:employee).permit(:worker_id, :run, :names, :lastnames, :email, :addres, :birthdate, :contract_type, :weekly_hours, :avatar, :branch_office_id)
     end
 end

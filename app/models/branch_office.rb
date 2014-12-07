@@ -4,6 +4,8 @@ class BranchOffice < ActiveRecord::Base
 	include Exportable
 
 	belongs_to :customer
+	has_many :workplaces
+	has_many :employees, :through => :workplaces
 		
 	# Validations
 			# validates :name, <validations>
