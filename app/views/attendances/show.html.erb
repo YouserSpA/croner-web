@@ -1,14 +1,18 @@
 <h2 class="page-title page-title-green">
 	<span class="glyphicon glyphicon-align-left"></span>
-	attendances
+	asistencia
 </h2>
-
+<br />
+<ol class="breadcrumb">
+  <li><%= link_to "Empleado", employee_path(@employee) %></li>
+  <li class="active">Asistencia <b><%= @attendance.marked_at %></b></li>
+</ol>
 
 <div class="page-body">
 	<div class="row">
 		<div class="col-md-12">
 			<div class="panel panel-primary">
-				<div class="panel-heading">Detalle attendance</div>
+				<div class="panel-heading">Detalle asistencia</div>
 				<div class="panel-body">
 
 					<div class="row">

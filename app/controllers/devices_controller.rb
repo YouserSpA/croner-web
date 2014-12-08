@@ -29,7 +29,7 @@ class DevicesController < ApplicationController
     @device = @employee.devices.new(device_params)
 
     if @device.save
-      redirect_to @device, notice: 'Device was successfully created.'
+      redirect_to @employee, notice: 'Dispositivo registrado exitosamente.'
     else
       render :new
     end
