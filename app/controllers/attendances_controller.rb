@@ -28,7 +28,7 @@ class AttendancesController < ApplicationController
     @attendance = @employee.attendances.new(attendance_params)
 
     if @attendance.save
-      redirect_to @attendance, notice: 'Attendance was successfully created.'
+      redirect_to @employee, notice: 'Attendance was successfully created.'
     else
       render :new
     end
@@ -37,7 +37,7 @@ class AttendancesController < ApplicationController
   # PATCH/PUT /attendances/1
   def update
     if @attendance.update(attendance_params)
-      redirect_to @attendance, notice: 'Attendance was successfully updated.'
+      redirect_to @employee, notice: 'Attendance was successfully updated.'
     else
       render :edit
     end
@@ -57,6 +57,6 @@ class AttendancesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def attendance_params
-      params.require(:attendance).permit(:event, :location, :marked_at, :employee_id)
+      params.require(:attendance).permit(:event, :latitude, :longitude, :marked_at, :employee_id)
     end
 end

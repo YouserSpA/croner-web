@@ -15,7 +15,8 @@ ActiveRecord::Schema.define(version: 20141207214327) do
 
   create_table "attendances", force: true do |t|
     t.string   "event"
-    t.string   "location"
+    t.string   "latitude"
+    t.string   "longitude"
     t.datetime "marked_at"
     t.integer  "employee_id", null: false
     t.datetime "created_at"

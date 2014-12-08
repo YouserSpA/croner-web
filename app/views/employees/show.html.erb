@@ -57,7 +57,7 @@
 				</div>
 			</div>
 		
-			<div class="panel panel-success">
+			<!-- <div class="panel panel-success">
 				<div class="panel-heading">Sucursales</div>
 				<div class="panel-body">
 					<div class="table-responsive">
@@ -69,17 +69,17 @@
 								</tr>
 							</thead>
 							<tbody>
-							<!-- 	<% @employee.branch_offices.each do |bo| %>
+								 	<% @employee.branch_offices.each do |bo| %>
 								  	<tr>
 								    	<td><%= bo.name %></td>
 								   		<td></td>
-							 	<% end %>-->
+							 	<% end %>
 							</tbody>
 						</table>
 					</div>
 				</div>
 			</div>
-
+ -->
 			<div class="panel panel-success">
 				<div class="panel-heading">Smart-Devices</div>
 				<div class="panel-body">
@@ -150,14 +150,14 @@
 						<table class="table table-hover">
 				          <thead>
 				            <tr>
-				                              <th>Event</th>
-				                              <th>Marked at</th>
+				                              <th>Evento</th>
+				                              <th>Fecha de marcado</th>
 				                            <th></th>              
 				            </tr>
 				          </thead>
 
 				          <tbody>
-				            <% @employee.attendances.each do |attendance| %>
+				            <% @employee.attendances.order("marked_at desc").each do |attendance| %>
 				              <tr>
 				                                    <td><%= attendance.event %></td>
 				                                    <td><%= attendance.marked_at %></td>

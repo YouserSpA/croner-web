@@ -16,22 +16,24 @@
         <table class="table table-hover">
           <thead>
             <tr>
-                              <th>Event</th>
-                              <th>Location</th>
-                              <th>Marked at</th>
+                              <th>Enento</th>
+                              <th>Latitud</th>
+                              <th>Longitud</th>
+                              <th>Fecha y hora de marcado</th>
                               <!-- <th>Employee</th> -->
                             <th></th>              
             </tr>
           </thead>
 
           <tbody>
-            <% @attendances.each do |attendance| %>
+            <% @employee.attendances.order("marked_at desc").each do |attendance| %>
               <tr>
                                     <td><%= attendance.event %></td>
-                                    <td><%= attendance.location %></td>
+                                    <td><%= attendance.latitude %></td>
+                                    <td><%= attendance.longitude %></td>
                                     <td><%= attendance.marked_at %></td>
                                     <!-- <td><%= attendance.employee.run %></td> -->
-                                <td><%= link_to '', employee_attendance_path(@employee, attendance), :class => "glyphicon glyphicon-eye-open" %></td>
+                                <td><%= link_to '', employee_attendance_path(@employee, attendance), :class => "btn btn-default glyphicon glyphicon-eye-open" %></td>
                 <!-- <td><= link_to 'Edit', edit_attendance_path(attendance) %></td>
                 <td><= link_to 'Destroy', attendance, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
               </tr>
