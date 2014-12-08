@@ -1,0 +1,55 @@
+
+<h2 class="page-title page-title-green">
+  <span class="glyphicon glyphicon-user"></span>
+  empleados
+</h2>
+
+<div class="page-buttons clearfix">
+  <%= link_to 'Nuevo Empleado', new_employee_path, :class => "btn btn-primary float-left" %>
+</div>
+
+<div class="page-body">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <div class="table-responsive">
+
+        <table class="table table-hover">
+          <thead>
+            <tr>
+                              <th>CodTrabajador</th>
+                              <th>Run</th>
+                              <th>Names</th>
+                              <th>Lastnames</th>
+                              <th>Horas/Semana</th>
+                              <!-- <th>Email</th> -->
+                              <!-- <th>Addres</th>
+                              <th>Birthdate</th> -->
+                            <th></th>              
+            </tr>
+          </thead>
+
+          <tbody>
+            <% @customer.employees.each do |employee| %>
+              <tr>
+                                    <td><%= employee.worker_id %></td>
+                                    <td><%= employee.run %></td>
+                                    <td><%= employee.names %></td>
+                                    <td><%= employee.lastnames %></td>
+                                    <td><%= employee.weekly_hours %></td>
+                                    <!-- <td><%= employee.addres %></td>
+                                    <td><%= employee.birthdate %></td> -->
+                                <td><%= link_to '', employee, :class => "btn btn-default glyphicon glyphicon-eye-open" %>
+                                </td>
+                <!-- <td><= link_to 'Edit', edit_employee_path(employee) %></td>
+                <td><= link_to 'Destroy', employee, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>

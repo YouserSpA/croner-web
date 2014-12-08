@@ -1,0 +1,53 @@
+<h2 class="page-title page-title-green">
+	<span class="glyphicon glyphicon-tower"></span>
+	Sucursales
+</h2>
+
+
+<div class="page-body">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="panel panel-success">
+				<div class="panel-heading">Detalle sucursal</div>
+				<div class="panel-body">
+
+					<div class="row">
+						<div class="col-md-6">
+							<table class="table">
+								<tbody>
+																			<tr>
+										  <th>Nombre:</th>
+										  <td><%= @branch_office.name %></td>
+										</tr>
+																			<tr>
+										  <th>País:</th>
+										  <td><%= @branch_office.country %></td>
+										</tr>
+																			<tr>
+										  <th>Región/Estado:</th>
+										  <td><%= @branch_office.region %></td>
+										</tr>
+																			<tr>
+										  <th>Dirección:</th>
+										  <td><%= @branch_office.address %></td>
+										</tr>
+																			<tr>
+											<th>Empresa:</th>
+											<td><%= @branch_office.customer.name %></td>
+										</tr>
+																	</tbody>
+							</table>
+						</div>
+
+					</div>
+
+<%= link_to 'Editar', edit_branch_office_path(@branch_office), :class => "btn btn-default" %>
+<%= link_to 'Destruir', @branch_office, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger" %>
+<%= link_to 'Volver', branch_offices_path, :class => "btn btn-link" %>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>

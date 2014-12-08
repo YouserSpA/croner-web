@@ -1,0 +1,110 @@
+<h2 class="page-title page-title-green">
+	<span class="glyphicon glyphicon-map-marker"></span>
+	asistencia
+</h2>
+<br />
+<ol class="breadcrumb">
+  <li><%= link_to "Empleado", employee_path(@employee) %></li>
+  <li class="active">Asistencia <b><%= @attendance.marked_at %></b></li>
+</ol>
+
+<div class="page-body">
+	<div class="row">
+		<div class="col-md-12">
+
+			<div class="panel panel-success">
+				<div class="panel-heading">Posición del empleado</div>
+				<div class="panel-body">
+					<center>
+						<div id="map" class="map" style="height: 350px; width: 700px; border-style: solid; border-width: 1px; float: center;"></div>
+					</center>
+				</div>
+			</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=initialize"></script>
+<script>
+
+
+/* API Google Maps*/
+
+var directionsDisplay,
+    directionsService,
+    map;
+
+function initialize() {
+	var directionsService = new google.maps.DirectionsService();
+	var directionsDisplay = new google.maps.DirectionsRenderer();
+	var center = new google.maps.LatLng("<%= @attendance.latitude %>","<%= @attendance.longitude %>");
+	var marker_position = new google.maps.LatLng("<%= @attendance.latitude %>","<%= @attendance.longitude %>")
+	var mapOptions = {
+	    zoom: 15,
+	    mapTypeId: google.maps.MapTypeId.ROADMAP,
+	    center: center,
+	    mapTypeControl: false,
+	    panControl: false,
+	    zoomControl: true,
+	    streetViewControl: true
+	}
+	var infowindow = new google.maps.InfoWindow()    
+
+	map = new google.maps.Map(document.getElementById("map"), mapOptions);
+	directionsDisplay.setMap(map);
+	marker = new google.maps.Marker({ position: marker_position, map: map, title: 'Empleado'})
+	infowindow.setContent('<span class="dark">Empleado run: <%= @employee.run %></span>')
+	infowindow.open(map, marker)
+
+	google.maps.event.addListener(marker , 'click', function () {
+	    infowindow.open(map, marker)
+    })
+}
+
+</script>
+
+
+
+			<div class="panel panel-success">
+				<div class="panel-heading">Detalle asistencia</div>
+				<div class="panel-body">
+
+					<div class="row">
+						<div class="col-md-6">
+							<table class="table">
+								<tbody>
+																			<tr>
+										  <th>Evento:</th>
+										  <td><%= @attendance.event %></td>
+										</tr>
+																			<tr>
+										  <th>Latitud:</th>
+										  <td><%= @attendance.latitude %></td>
+										</tr>
+																			<tr>
+										  <th>Longitud:</th>
+										  <td><%= @attendance.longitude %></td>
+										</tr>
+																			<tr>
+										  <th>Fecha y hora de marcado:</th>
+										  <td><%= @attendance.marked_at %></td>
+										</tr>
+											<!-- 								<tr>
+											<th>Employee:</th>
+											<td><= @attendance.employee.name %></td>
+										</tr> -->
+																	</tbody>
+							</table>
+						</div>
+
+					</div>
+<!-- 
+<= link_to 'Editar', edit_employee_attendance_path(@employee, @attendance), :class => "btn btn-default" %> -->
+<%= link_to 'Destruir', [@attendance.employee, @attendance], method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger" %>
+<%= link_to 'Volver', employee_path(@employee), :class => "btn btn-link" %>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+

@@ -1,0 +1,186 @@
+<h2 class="page-title page-title-green">
+	<span class="glyphicon glyphicon-user"></span>
+	empleados
+</h2>
+
+
+<div class="page-body">
+	<div class="row">
+		<div class="col-md-7">
+			<div class="panel panel-success">
+				<div class="panel-heading">Datos empleado</div>
+				<div class="panel-body">
+
+					<div class="row well">
+						<center>
+							<%= image_tag @employee.avatar.url(:medium) %>
+						</center>
+					</div>
+
+					<div class="panel panel-default">
+						<dl class="dl-horizontal">
+							<dt>Cod Trabajador:</dt>
+							<dd><%= @employee.worker_id %></dd>
+
+							<dt>Tipo de contrato:</dt>
+							<dd><%= @employee.contract_type %></dd>
+
+							<dt>Horas semanales:</dt>
+							<dd><%= @employee.weekly_hours %></dd>
+
+							<dt>Run:</dt>
+							<dd><%= @employee.run %></dd>
+
+							<dt>Nombres:</dt>
+							<dd><%= @employee.names %></dd>
+
+							<dt>Apellidos:</dt>
+							<dd><%= @employee.lastnames %></dd>
+
+							<dt>Correo electrónico</dt>
+							<dd><%= @employee.email %></dd>
+
+							<dt>Dirección:</dt>
+							<dd><%= @employee.addres %></dd>
+
+							<dt>Fecha nacimiento:</dt>
+							<dd><%= @employee.birthdate %></dd>
+						</dl>
+					
+					</div>
+
+
+<%= link_to 'Editar', edit_employee_path(@employee), :class => "btn btn-default" %>
+<%= link_to 'Destruir', @employee, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger" %>
+<%= link_to 'Volver', employees_path, :class => "btn btn-link" %>
+
+				</div>
+			</div>
+		
+			<!-- <div class="panel panel-success">
+				<div class="panel-heading">Sucursales</div>
+				<div class="panel-body">
+					<div class="table-responsive">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th>Sucursal</th>
+								    <th></th>              
+								</tr>
+							</thead>
+							<tbody>
+								 	<% @employee.branch_offices.each do |bo| %>
+								  	<tr>
+								    	<td><%= bo.name %></td>
+								   		<td></td>
+							 	<% end %>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+ -->
+			<div class="panel panel-success">
+				<div class="panel-heading">Smart-Devices</div>
+				<div class="panel-body">
+					<div class="table-responsive">
+						<div class="page-buttons clearfix">
+						  <%= link_to 'Nuevo dispositivo', new_employee_device_path(@employee), :class => "btn btn-primary float-left" %>
+						</div>
+				        <table class="table table-hover">
+				          <thead>
+				            <tr>
+								<th>Imei</th>
+	                            <th></th>              
+				            </tr>
+				          </thead>
+
+				          <tbody>
+				            <% @employee.devices.each do |device| %>
+				              	<tr>
+                                	<td><%= device.imei %></td>
+                               		<td>
+		                                <!-- 	<= link_to '', employee_device_path(@employee, device), :class => "glyphicon glyphicon-eye-open" %> -->
+		                                <button type="button" class="glyphicon glyphicon-eye-open" data-toggle="modal" data-target=".bs-example-modal-sm"> </button>
+	                                </td>
+
+
+									<!-- Modal para el detalle del smart-device -->
+
+									<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+									  <div class="modal-dialog modal-sm">
+									    <div class="modal-content">
+									    	<div class="modal-header">
+										        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+										        <h4 class="modal-title">Detalle del dispositivo inteligente</h4>
+									      	</div>
+											<div class="panel panel-success">
+												<div class="panel-body">				
+									  
+													<b>Meid:</b> <%= device.meid %>	<br />
+													<b>Esn:</b> <%= device.esn %>	<br />
+													<b>Imei:</b> <%= device.imei %>	<br />
+													<b>Wlanmacaddress:</b> <%= device.wlanMacAddress %>	<br />
+												</div>
+											</div>
+
+									    </div>	<!-- Modal Content  -->
+									  </div>	<!-- Modal Dialog  -->
+									</div>	<!-- Modal Fade  -->
+				                <!-- <td><= link_to 'Edit', edit_device_path(device) %></td>
+				                <td><= link_to 'Destroy', device, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+				              </tr>
+				            <% end %>
+				          </tbody>
+				        </table>
+
+				      </div>	<!-- Table Responsive  -->
+				    </div>	<!-- Panle Body  -->
+				</div>	<!-- Panel success  -->
+
+		</div>
+
+		<div class="col-md-5">
+
+			<div class="panel panel-success">
+				<div class="panel-heading">Registros asistenciales</div>
+				<div class="panel-body">
+					<div class="table-responsive">
+
+						<table class="table table-hover">
+				          <thead>
+				            <tr>
+				                              <th>Evento</th>
+				                              <th>Fecha de marcado</th>
+				                            <th></th>              
+				            </tr>
+				          </thead>
+
+				          <tbody>
+				            <% @employee.attendances.order("marked_at desc").each do |attendance| %>
+				              <tr>
+				                                    <td><%= attendance.event %></td>
+				                                    <td><%= attendance.marked_at %></td>
+				                                <td>
+				                                	<%= link_to '', employee_attendance_path(@employee, attendance), :class => "btn btn-default glyphicon glyphicon-eye-open" %>
+				                                </td>
+				                <!-- <td><= link_to 'Edit', edit_attendance_path(attendance) %></td>
+				                <td><= link_to 'Destroy', attendance, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+				              </tr>
+				            <% end %>
+				          </tbody>
+				        </table>
+
+					</div>
+				</div>
+			</div>	
+
+			
+		</div>
+			
+	</div> <!-- row -->
+
+
+		
+</div>
+	

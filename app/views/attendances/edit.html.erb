@@ -1,0 +1,6 @@
+<h1>Editing attendance</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', [@employee, @employee.attendances.build], :class => "bnt btn-link" %> |
+<%= link_to 'Back', employee_attendances_path(@employee), :class => "btn btn-link" %>

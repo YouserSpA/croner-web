@@ -1,0 +1,46 @@
+<h2 class="page-title page-title-green">
+	<span class="glyphicon glyphicon-align-left"></span>
+	<%= plural_table_name %>
+</h2>
+
+
+<div class="page-body">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="panel panel-primary">
+				<div class="panel-heading">Detalle <%= singular_table_name %></div>
+				<div class="panel-body">
+
+					<div class="row">
+						<div class="col-md-6">
+							<table class="table">
+								<tbody>
+									<% attributes.reject(&:password_digest?).each do |attribute| -%>
+									<%- if attribute.reference? -%>
+										<tr>
+											<th><%= attribute.human_name %>:</th>
+											<td><%%= @<%= singular_table_name %>.<%= attribute.name %>.name %></td>
+										</tr>
+									<%- else -%>
+										<tr>
+										  <th><%= attribute.human_name %>:</th>
+										  <td><%%= @<%= singular_table_name %>.<%= attribute.name %> %></td>
+										</tr>
+									<%- end -%>
+									<% end -%>
+								</tbody>
+							</table>
+						</div>
+
+					</div>
+
+<%%= link_to 'Editar', edit_<%= singular_table_name %>_path(@<%= singular_table_name %>), :class => "btn btn-default" %>
+<%%= link_to 'Destruir', @<%= singular_table_name %>, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger" %>
+<%%= link_to 'Volver', <%= index_helper %>_path, :class => "btn btn-link" %>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
