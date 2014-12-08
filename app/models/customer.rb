@@ -7,10 +7,10 @@ class Customer < ActiveRecord::Base
 	has_many :branch_offices
 		
 	# Validations
-			# validates :name, <validations>
+			validates :name, presence: true
 			# validates :clientType, <validations>
 			# validates :status, <validations>
-			# validates :rut, <validations>
+			validates :rut, presence: true
 			# validates :email, <validations>
 	
 	# Scopes (used for search form)

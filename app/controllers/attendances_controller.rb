@@ -20,6 +20,8 @@ class AttendancesController < ApplicationController
 
   # GET /attendances/1/edit
   def edit
+    @employee = Employee.find(params[:employee_id])
+    @attendance = @employee.attendances.find(params[:id])
   end
 
   # POST /attendances
@@ -28,7 +30,7 @@ class AttendancesController < ApplicationController
     @attendance = @employee.attendances.new(attendance_params)
 
     if @attendance.save
-      redirect_to @employee, notice: 'Attendance was successfully created.'
+      redirect_to [@employee, @employee.attendances.build], notice: 'Attendance was successfully created.'
     else
       render :new
     end
@@ -36,7 +38,10 @@ class AttendancesController < ApplicationController
 
   # PATCH/PUT /attendances/1
   def update
-    if @attendance.update(attendance_params)
+    @employee = Employee.find(params[:employee_id])
+    @attendance = @employee.attendances.find(params[:id])
+
+    if @@employee.attendances.find(params[:id]).update(attendance_params)
       redirect_to @employee, notice: 'Attendance was successfully updated.'
     else
       render :edit
@@ -45,6 +50,9 @@ class AttendancesController < ApplicationController
 
   # DELETE /attendances/1
   def destroy
+    @employee = Employee.find(params[:employee_id])
+    @attendance = @employee.attendances.find(params[:id])
+
     @attendance.destroy
     redirect_to attendances_url, notice: 'Attendance was successfully destroyed.'
   end
@@ -57,6 +65,6 @@ class AttendancesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def attendance_params
-      params.require(:attendance).permit(:event, :latitude, :longitude, :marked_at, :employee_id)
+      params.require(:attendance).permit(:event, :latitude, :longitude, :marked_at)
     end
 end

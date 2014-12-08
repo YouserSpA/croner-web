@@ -49,7 +49,7 @@ class DevicesController < ApplicationController
     @employee = Employee.find(params[:employee_id])
     @device = @employee.devices.find(params[:id])
     @device.destroy
-    redirect_to devices_url, notice: 'Device was successfully destroyed.'
+    redirect_to @employee, notice: 'Device was successfully destroyed.'
   end
 
   private

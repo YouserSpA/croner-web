@@ -97,8 +97,8 @@ function initialize() {
 
 					</div>
 <!-- 
-<= link_to 'Editar', edit_employee_attendance_path(@employee, @attendance), :class => "btn btn-default" %>
-<= link_to 'Destruir', [@employee, @employee.attendances.build], method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger" %> -->
+<= link_to 'Editar', edit_employee_attendance_path(@employee, @attendance), :class => "btn btn-default" %> -->
+<%= link_to 'Destruir', [@attendance.employee, @attendance], method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger" %>
 <%= link_to 'Volver', employee_path(@employee), :class => "btn btn-link" %>
 
 				</div>

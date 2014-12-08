@@ -15,10 +15,10 @@ class Employee < ActiveRecord::Base
 
 	# Validations
 			# validates :worker_id, <validations>
-			# validates :run, <validations>
+			validates :run, presence: true
 			# validates :names, <validations>
 			# validates :lastnames, <validations>
-			# validates :email, <validations>
+			validates :email, presence: true
 			# validates :addres, <validations>
 			# validates :birthdate, <validations>
 	

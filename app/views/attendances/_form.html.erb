@@ -27,10 +27,10 @@
                 <%= f.label :marked_at %>
             <%= f.datetime_select :marked_at, :class => "form-control" %>
     </div>
-<div class="form-group">
-                <%= f.label :employee_id %>
-            <%= f.collection_select :employee_id, Employee.all, :id, :run, prompt: true, :class => 'form-control'  %>
-    </div>
+<!-- <div class="form-group">
+                <= f.label :employee_id %>
+            <= f.collection_select :employee_id, Employee.all, :id, :run, prompt: true, :class => 'form-control'  %>
+    </div> -->
 <div class="actions">
     <%= f.submit :class => "btn btn-success" %>
 </div>

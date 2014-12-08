@@ -8,7 +8,7 @@ class Device < ActiveRecord::Base
 	# Validations
 			# validates :meid, <validations>
 			# validates :esn, <validations>
-			# validates :imei, <validations>
+			validates :imei, presence: true
 			# validates :wlanMacAddress, <validations>
 			# validates :employee, <validations>
 	
