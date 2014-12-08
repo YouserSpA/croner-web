@@ -41,7 +41,7 @@
 					</div>
 
 <%= link_to 'Editar', edit_employee_device_path(@employee, @device), :class => "btn btn-default" %>
-<%= link_to 'Destruir', [@employee, @employee.devices.build], method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger" %>
+<%= link_to 'Destruir', [@device, @device.employee.build], method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger" %>
 <%= link_to 'Volver', employee_devices_path, :class => "btn btn-link" %>
 
 				</div>
