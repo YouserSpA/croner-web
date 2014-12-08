@@ -51804,3 +51804,214 @@ Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-08 17:00:
   [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM `employees`[0m
   [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `employees`
   [1m[36mEmployee Load (0.6ms)[0m  [1mSELECT `employees`.* FROM `employees` LIMIT 3 OFFSET 0[0m
+  [1m[36m (238.8ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (284.3ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to DeviseCreateUsers (20140219221337)
+  [1m[35m (203.7ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `name` varchar(255), `address` varchar(255), `country` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (291.5ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_email` ON `users` (`email`) [0m
+  [1m[35m (247.2ms)[0m  CREATE UNIQUE INDEX `index_users_on_reset_password_token` ON `users` (`reset_password_token`) 
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140219221337')
+  [1m[36m (27.7ms)[0m  [1mCOMMIT[0m
+Migrating to CreateCustomers (20141201155303)
+  [1m[35m (203.0ms)[0m  CREATE TABLE `customers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `clientType` varchar(255), `status` int(11), `rut` varchar(255), `email` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20141201155303')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Migrating to AddCustomerRefToUsers (20141202175800)
+  [1m[35m (246.9ms)[0m  ALTER TABLE `users` ADD `customer_id` int(11)
+  [1m[36m (213.8ms)[0m  [1mCREATE INDEX `index_users_on_customer_id` ON `users` (`customer_id`) [0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20141202175800')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+Migrating to CreateEmployees (20141204022938)
+  [1m[36m (226.4ms)[0m  [1mCREATE TABLE `employees` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `worker_id` varchar(255), `run` varchar(255), `names` varchar(255), `lastnames` varchar(255), `email` varchar(255), `addres` varchar(255), `birthdate` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20141204022938')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+Migrating to AddCustomerRefToEmployees (20141204165911)
+  [1m[36m (179.9ms)[0m  [1mALTER TABLE `employees` ADD `customer_id` int(11) NOT NULL[0m
+  [1m[35m (142.9ms)[0m  CREATE INDEX `index_employees_on_customer_id` ON `employees` (`customer_id`) 
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20141204165911')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to AddContractToEmployee (20141204205817)
+  [1m[35m (170.3ms)[0m  ALTER TABLE `employees` ADD `weekly_hours` int(11)
+  [1m[36m (166.7ms)[0m  [1mALTER TABLE `employees` ADD `contract_type` text[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20141204205817')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+Migrating to AddAvatarToEmployees (20141204212953)
+  [1m[36m (220.3ms)[0m  [1mALTER TABLE `employees` ADD `avatar_file_name` varchar(255)[0m
+  [1m[35m (167.5ms)[0m  ALTER TABLE `employees` ADD `avatar_content_type` varchar(255)
+  [1m[36m (178.8ms)[0m  [1mALTER TABLE `employees` ADD `avatar_file_size` int(11)[0m
+  [1m[35m (197.3ms)[0m  ALTER TABLE `employees` ADD `avatar_updated_at` datetime
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20141204212953')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateBranchOffices (20141205000946)
+  [1m[35m (184.1ms)[0m  CREATE TABLE `branch_offices` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `country` varchar(255), `region` varchar(255), `address` varchar(255), `customer_id` int(11) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (231.7ms)[0m  [1mCREATE INDEX `index_branch_offices_on_customer_id` ON `branch_offices` (`customer_id`) [0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20141205000946')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+Migrating to CreateDevices (20141205005000)
+  [1m[36m (133.0ms)[0m  [1mCREATE TABLE `devices` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `meid` varchar(255), `esn` varchar(255), `imei` varchar(255), `wlanMacAddress` varchar(255), `employee_id` int(11) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35m (158.2ms)[0m  CREATE INDEX `index_devices_on_employee_id` ON `devices` (`employee_id`) 
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20141205005000')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateWorkplaces (20141207200217)
+  [1m[35m (129.5ms)[0m  CREATE TABLE `workplaces` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `branch_office_id` int(11) NOT NULL, `employee_id` int(11) NOT NULL, `working_since` datetime, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (167.6ms)[0m  [1mCREATE INDEX `index_workplaces_on_branch_office_id` ON `workplaces` (`branch_office_id`) [0m
+  [1m[35m (145.4ms)[0m  CREATE INDEX `index_workplaces_on_employee_id` ON `workplaces` (`employee_id`) 
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20141207200217')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Migrating to CreateAttendances (20141207214327)
+  [1m[35m (150.6ms)[0m  CREATE TABLE `attendances` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `event` varchar(255), `latitude` varchar(255), `longitude` varchar(255), `marked_at` datetime, `employee_id` int(11) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (167.8ms)[0m  [1mCREATE INDEX `index_attendances_on_employee_id` ON `attendances` (`employee_id`) [0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20141207214327')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'mlandaetasanchez@gmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (129.4ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (411.5ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to DeviseCreateUsers (20140219221337)
+  [1m[35m (157.8ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `name` varchar(255), `address` varchar(255), `country` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (179.8ms)[0m  [1mCREATE UNIQUE INDEX `index_users_on_email` ON `users` (`email`) [0m
+  [1m[35m (155.2ms)[0m  CREATE UNIQUE INDEX `index_users_on_reset_password_token` ON `users` (`reset_password_token`) 
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140219221337')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateCustomers (20141201155303)
+  [1m[35m (176.3ms)[0m  CREATE TABLE `customers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `clientType` varchar(255), `status` int(11), `rut` varchar(255), `email` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20141201155303')
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+Migrating to AddCustomerRefToUsers (20141202175800)
+  [1m[35m (184.4ms)[0m  ALTER TABLE `users` ADD `customer_id` int(11)
+  [1m[36m (139.3ms)[0m  [1mCREATE INDEX `index_users_on_customer_id` ON `users` (`customer_id`) [0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20141202175800')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+Migrating to CreateEmployees (20141204022938)
+  [1m[36m (184.3ms)[0m  [1mCREATE TABLE `employees` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `worker_id` varchar(255), `run` varchar(255), `names` varchar(255), `lastnames` varchar(255), `email` varchar(255), `addres` varchar(255), `birthdate` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20141204022938')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+Migrating to AddCustomerRefToEmployees (20141204165911)
+  [1m[36m (180.9ms)[0m  [1mALTER TABLE `employees` ADD `customer_id` int(11) NOT NULL[0m
+  [1m[35m (164.7ms)[0m  CREATE INDEX `index_employees_on_customer_id` ON `employees` (`customer_id`) 
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20141204165911')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to AddContractToEmployee (20141204205817)
+  [1m[35m (203.6ms)[0m  ALTER TABLE `employees` ADD `weekly_hours` int(11)
+  [1m[36m (189.7ms)[0m  [1mALTER TABLE `employees` ADD `contract_type` text[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20141204205817')[0m
+  [1m[35m (0.5ms)[0m  COMMIT
+Migrating to AddAvatarToEmployees (20141204212953)
+  [1m[36m (184.6ms)[0m  [1mALTER TABLE `employees` ADD `avatar_file_name` varchar(255)[0m
+  [1m[35m (224.1ms)[0m  ALTER TABLE `employees` ADD `avatar_content_type` varchar(255)
+  [1m[36m (189.9ms)[0m  [1mALTER TABLE `employees` ADD `avatar_file_size` int(11)[0m
+  [1m[35m (233.4ms)[0m  ALTER TABLE `employees` ADD `avatar_updated_at` datetime
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20141204212953')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Migrating to CreateBranchOffices (20141205000946)
+  [1m[35m (189.5ms)[0m  CREATE TABLE `branch_offices` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `country` varchar(255), `region` varchar(255), `address` varchar(255), `customer_id` int(11) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (180.1ms)[0m  [1mCREATE INDEX `index_branch_offices_on_customer_id` ON `branch_offices` (`customer_id`) [0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20141205000946')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+Migrating to CreateDevices (20141205005000)
+  [1m[36m (138.4ms)[0m  [1mCREATE TABLE `devices` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `meid` varchar(255), `esn` varchar(255), `imei` varchar(255), `wlanMacAddress` varchar(255), `employee_id` int(11) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [1m[35m (169.3ms)[0m  CREATE INDEX `index_devices_on_employee_id` ON `devices` (`employee_id`) 
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20141205005000')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateWorkplaces (20141207200217)
+  [1m[35m (174.3ms)[0m  CREATE TABLE `workplaces` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `branch_office_id` int(11) NOT NULL, `employee_id` int(11) NOT NULL, `working_since` datetime, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (178.5ms)[0m  [1mCREATE INDEX `index_workplaces_on_branch_office_id` ON `workplaces` (`branch_office_id`) [0m
+  [1m[35m (167.5ms)[0m  CREATE INDEX `index_workplaces_on_employee_id` ON `workplaces` (`employee_id`) 
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20141207200217')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Migrating to CreateAttendances (20141207214327)
+  [1m[35m (185.1ms)[0m  CREATE TABLE `attendances` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `event` varchar(255), `latitude` varchar(255), `longitude` varchar(255), `marked_at` datetime, `employee_id` int(11) NOT NULL, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36m (247.2ms)[0m  [1mCREATE INDEX `index_attendances_on_employee_id` ON `attendances` (`employee_id`) [0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20141207214327')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'mlandaetasanchez@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `users` (`created_at`, `customer_id`, `email`, `encrypted_password`, `updated_at`) VALUES ('2014-12-08 20:57:30', 1, 'mlandaetasanchez@gmail.com', '$2a$10$AWnxpnq5Tqppriib14FDveZCs2waINXl/LUrfl.g61ezhcu/j0IHK', '2014-12-08 20:57:30')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'mariolopezlandes@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `users` (`created_at`, `customer_id`, `email`, `encrypted_password`, `updated_at`) VALUES ('2014-12-08 20:57:30', 1, 'mariolopezlandes@gmail.com', '$2a$10$YkSLW4DdC1AkF7kNKAreMOtbfKRSOetKeOzAutRAhu5xSOftxzeC2', '2014-12-08 20:57:30')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `attendances` (`created_at`, `employee_id`, `event`, `latitude`, `longitude`, `marked_at`, `updated_at`) VALUES ('2014-12-08 20:57:30', 1, 'Ingreso', '-33.430009', '-70.625485', '2014-12-02 08:13:00', '2014-12-08 20:57:30')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `attendances` (`created_at`, `employee_id`, `event`, `latitude`, `longitude`, `marked_at`, `updated_at`) VALUES ('2014-12-08 20:57:30', 1, 'Egreso', '-33.430008', '-70.625484', '2014-12-03 13:22:00', '2014-12-08 20:57:30')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `attendances` (`created_at`, `employee_id`, `event`, `latitude`, `longitude`, `marked_at`, `updated_at`) VALUES ('2014-12-08 20:57:30', 2, 'Ingreso', '-33.430011', '-70.625487', '2014-12-02 08:41:00', '2014-12-08 20:57:30')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `attendances` (`created_at`, `employee_id`, `event`, `latitude`, `longitude`, `marked_at`, `updated_at`) VALUES ('2014-12-08 20:57:30', 2, 'Egreso', '-33.430018', '-70.625490', '2014-12-02 14:42:00', '2014-12-08 20:57:30')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `attendances` (`created_at`, `employee_id`, `event`, `latitude`, `longitude`, `marked_at`, `updated_at`) VALUES ('2014-12-08 20:57:30', 3, 'Ingreso', '-33.430111', '-70.625500', '2014-12-02 08:45:00', '2014-12-08 20:57:30')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `attendances` (`created_at`, `employee_id`, `event`, `latitude`, `longitude`, `marked_at`, `updated_at`) VALUES ('2014-12-08 20:57:30', 4, 'Ingreso', '-34.430111', '-72.625485', '2014-12-02 08:37:00', '2014-12-08 20:57:30')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `attendances` (`created_at`, `employee_id`, `event`, `latitude`, `longitude`, `marked_at`, `updated_at`) VALUES ('2014-12-08 20:57:30', 4, 'Ingreso', '-34.430111', '-69.625484', '2014-12-02 08:41:00', '2014-12-08 20:57:30')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `attendances` (`created_at`, `employee_id`, `event`, `latitude`, `longitude`, `marked_at`, `updated_at`) VALUES ('2014-12-08 20:57:30', 4, 'Egreso', '-33.430111', '-59.625484', '2014-12-02 17:56:00', '2014-12-08 20:57:30')
+  [1m[36m (40.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `attendances` (`created_at`, `employee_id`, `event`, `latitude`, `longitude`, `marked_at`, `updated_at`) VALUES ('2014-12-08 20:57:30', 3, 'Egreso', '-33.429001', '-70.625485', '2014-12-02 19:46:00', '2014-12-08 20:57:30')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `branch_offices` (`address`, `country`, `created_at`, `customer_id`, `name`, `region`, `updated_at`) VALUES ('Rafael Cañas #114 Oficina 1A. Metro Salvador Providencia', 'Chile', '2014-12-08 20:57:30', 1, 'Casa central', 'Metropolitana', '2014-12-08 20:57:30')
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `customers` (`clientType`, `created_at`, `email`, `name`, `rut`, `status`, `updated_at`) VALUES ('SpA', '2014-12-08 20:57:30', 'hola@requies.cl', 'Requies', '12222222222', 1, '2014-12-08 20:57:30')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `devices` (`created_at`, `employee_id`, `esn`, `imei`, `meid`, `updated_at`, `wlanMacAddress`) VALUES ('2014-12-08 20:57:30', 1, '121212121221', '1111 111111 11', '111111 11111 111', '2014-12-08 20:57:30', '12:32:23:23')
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `devices` (`created_at`, `employee_id`, `esn`, `imei`, `meid`, `updated_at`, `wlanMacAddress`) VALUES ('2014-12-08 20:57:30', 2, '133212121221', '1111 111111 22', '111111 11111 222', '2014-12-08 20:57:30', '12:32:23:25')[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `devices` (`created_at`, `employee_id`, `esn`, `imei`, `meid`, `updated_at`, `wlanMacAddress`) VALUES ('2014-12-08 20:57:30', 3, '444444441221', '2222 111111 22', '333333 11111 222', '2014-12-08 20:57:30', '12:32:23:31')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `devices` (`created_at`, `employee_id`, `esn`, `imei`, `meid`, `updated_at`, `wlanMacAddress`) VALUES ('2014-12-08 20:57:30', 4, '222244441221', '1111 11122 11', '111111 333333 111', '2014-12-08 20:57:30', '12:32:23:66')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `employees` (`addres`, `avatar_content_type`, `avatar_file_name`, `avatar_file_size`, `avatar_updated_at`, `birthdate`, `contract_type`, `created_at`, `customer_id`, `email`, `lastnames`, `names`, `run`, `updated_at`, `weekly_hours`, `worker_id`) VALUES ('Embajador Quintana 4368', 'image/jpeg', 'yo.jpg', 6932, '2014-12-08 08:12:20', '2009-12-08', 'Diurno', '2014-12-08 20:57:30', 1, 'mlandaetasanchez@gmail.com', 'Landaeta Sanchez', 'Mosheh-efra Osvaldo', '1-9', '2014-12-08 20:57:30', 40, '1')
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `employees` (`addres`, `avatar_content_type`, `avatar_file_name`, `avatar_file_size`, `avatar_updated_at`, `birthdate`, `contract_type`, `created_at`, `customer_id`, `email`, `lastnames`, `names`, `run`, `updated_at`, `weekly_hours`, `worker_id`) VALUES ('San Pablo #7777', 'image/jpeg', 'mario.jpg', 70684, '2014-12-08 08:40:37', '2009-12-08', 'Diurno', '2014-12-08 20:57:30', 1, 'mlopezlandes@gmail.com', 'Lopez Landes', 'Mario Luis', '1-3', '2014-12-08 20:57:30', 45, '2')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `employees` (`addres`, `avatar_content_type`, `avatar_file_name`, `avatar_file_size`, `avatar_updated_at`, `birthdate`, `contract_type`, `created_at`, `customer_id`, `email`, `lastnames`, `names`, `run`, `updated_at`, `weekly_hours`, `worker_id`) VALUES ('Enla Otracuadra 4444', 'image/jpeg', 'javier.jpg', 48416, '2014-12-08 08:45:03', '2009-12-08', 'Diurno', '2014-12-08 20:57:30', 1, 'wolfden00@gmail.com', 'Cáceres', 'Javier', '15-1', '2014-12-08 20:57:30', 45, '3')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
