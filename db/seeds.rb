@@ -1,5 +1,6 @@
 User.create!([
-  {email: "mlandaetasanchez@gmail.com", encrypted_password: "$2a$10$S431r99Ce2YqDy9rFsjei.b1c4rK/ptrYbRWvW2QMRvJZRP6j0lxq", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 3, current_sign_in_at: "2014-12-08 19:48:48", last_sign_in_at: "2014-12-08 08:50:45", current_sign_in_ip: "127.0.0.1", last_sign_in_ip: "127.0.0.1", name: nil, address: nil, country: nil, customer_id: 1}
+  {email: "mlandaetasanchez@gmail.com", password: "plop1234", name: nil, address: nil, country: nil, customer_id: 1},
+  {email: "mariolopezlandes@gmail.com", password: "plop1234", name: nil, address: nil, country: nil, customer_id: 1}
 ])
 Attendance.create!([
   {event: "Ingreso", latitude: "-33.430009", longitude: "-70.625485", marked_at: "2014-12-02 08:13:00", employee_id: 1},
