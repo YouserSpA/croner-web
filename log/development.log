@@ -51779,3 +51779,28 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-08 17:00:10
 
 
 Started GET "/assets/registrations.js?body=1" for 127.0.0.1 at 2014-12-08 17:00:10 -0300
+  [1m[36mUser Exists (0.6ms)[0m  [1mSELECT 1 AS one FROM `users` LIMIT 1[0m
+  [1m[35mAttendance Exists (0.7ms)[0m  SELECT 1 AS one FROM `attendances` LIMIT 1
+  [1m[36mBranchOffice Exists (0.5ms)[0m  [1mSELECT 1 AS one FROM `branch_offices` LIMIT 1[0m
+  [1m[35mCustomer Exists (0.4ms)[0m  SELECT 1 AS one FROM `customers` LIMIT 1
+  [1m[36mDevice Exists (0.5ms)[0m  [1mSELECT 1 AS one FROM `devices` LIMIT 1[0m
+  [1m[35mEmployee Exists (0.5ms)[0m  SELECT 1 AS one FROM `employees` LIMIT 1
+  [1m[36mWorkplace Exists (0.6ms)[0m  [1mSELECT 1 AS one FROM `workplaces` LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM `users`
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT `users`.* FROM `users` LIMIT 1 OFFSET 0
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM `attendances`[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `attendances`
+  [1m[36mAttendance Load (0.5ms)[0m  [1mSELECT `attendances`.* FROM `attendances` LIMIT 9 OFFSET 0[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM `branch_offices`
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `branch_offices`[0m
+  [1m[35mBranchOffice Load (0.6ms)[0m  SELECT `branch_offices`.* FROM `branch_offices` LIMIT 1 OFFSET 0
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM `customers`[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `customers`
+  [1m[36mCustomer Load (0.5ms)[0m  [1mSELECT `customers`.* FROM `customers` LIMIT 1 OFFSET 0[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM `devices`
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `devices`[0m
+  [1m[35mDevice Load (0.6ms)[0m  SELECT `devices`.* FROM `devices` LIMIT 4 OFFSET 0
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM `employees`[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `employees`
+  [1m[36mEmployee Load (0.6ms)[0m  [1mSELECT `employees`.* FROM `employees` LIMIT 3 OFFSET 0[0m
