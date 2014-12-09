@@ -6,6 +6,7 @@ class BranchOffice < ActiveRecord::Base
 	belongs_to :customer
 	has_many :workplaces
 	has_many :employees, :through => :workplaces
+	has_many :summary_attendances
 		
 	# Validations
 			# validates :name, <validations>

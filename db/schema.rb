@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141207214327) do
+ActiveRecord::Schema.define(version: 20141208233008) do
 
   create_table "attendances", force: true do |t|
     t.string   "event"
@@ -79,6 +79,26 @@ ActiveRecord::Schema.define(version: 20141207214327) do
   end
 
   add_index "employees", ["customer_id"], name: "index_employees_on_customer_id", using: :btree
+
+  create_table "summary_attendances", force: true do |t|
+    t.date     "attendace_date"
+    t.datetime "check_in_at"
+    t.datetime "check_out_at"
+    t.string   "worked_hours"
+    t.string   "contracted_hours"
+    t.string   "difference"
+    t.string   "delay"
+    t.boolean  "permission"
+    t.text     "medical_licence"
+    t.integer  "employee_id"
+    t.integer  "branch_office_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "summary_attendances", ["attendace_date"], name: "index_summary_attendances_on_attendace_date", using: :btree
+  add_index "summary_attendances", ["branch_office_id"], name: "index_summary_attendances_on_branch_office_id", using: :btree
+  add_index "summary_attendances", ["employee_id"], name: "index_summary_attendances_on_employee_id", using: :btree
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false

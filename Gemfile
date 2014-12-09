@@ -58,4 +58,10 @@ gem 'will_paginate'
 gem 'will_paginate-bootstrap'
 # }
 
+# Poblado bd {
 gem 'seed_dump'
+# }
+
+# Time difference{
+gem 'time_diff'
+# }

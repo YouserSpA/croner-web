@@ -1,7 +1,8 @@
 CronerWebApp::Application.routes.draw do
 
-
-
+  resources :summary_attendances
+  get '/generating_summaries', to: 'summary_attendances#generating_summaries'
+  
   resources :branch_offices
 
   resources :employees do

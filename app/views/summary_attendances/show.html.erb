@@ -1,0 +1,77 @@
+<h2 class="page-title page-title-green">
+	<span class="glyphicon glyphicon-list"></span>
+	Resumen asistencia
+</h2>
+
+
+<div class="page-body">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="panel panel-success">
+				<div class="panel-heading">Detalle resumen asistencia</div>
+				<div class="panel-body">
+
+					<div class="row">
+						<div class="col-md-6">
+							<table class="table">
+								<tbody>
+																			<tr>
+										  <th>Attendace date:</th>
+										  <td><%= @summary_attendance.attendace_date %></td>
+										</tr>
+																			<tr>
+										  <th>Check in at:</th>
+										  <td><%= @summary_attendance.check_in_at %></td>
+										</tr>
+																			<tr>
+										  <th>Check out at:</th>
+										  <td><%= @summary_attendance.check_out_at %></td>
+										</tr>
+																			<tr>
+										  <th>Worked hours:</th>
+										  <td><%= @summary_attendance.worked_hours %></td>
+										</tr>
+																			<tr>
+										  <th>Contracted hours:</th>
+										  <td><%= @summary_attendance.contracted_hours %></td>
+										</tr>
+																			<tr>
+										  <th>Difference:</th>
+										  <td><%= @summary_attendance.difference %></td>
+										</tr>
+																			<tr>
+										  <th>Delay:</th>
+										  <td><%= @summary_attendance.delay %></td>
+										</tr>
+																			<tr>
+										  <th>Permission:</th>
+										  <td><%= @summary_attendance.permission %></td>
+										</tr>
+																			<tr>
+										  <th>Medical licence:</th>
+										  <td><%= @summary_attendance.medical_licence %></td>
+										</tr>
+																			<tr>
+											<th>Employee:</th>
+											<td><%= @summary_attendance.employee.run %></td>
+										</tr>
+											<!-- 								<tr>
+											<th>Branch office:</th>
+											<td><= @summary_attendance.branch_office.name %></td>
+										</tr> -->
+																	</tbody>
+							</table>
+						</div>
+
+					</div>
+
+<%= link_to 'Editar', edit_summary_attendance_path(@summary_attendance), :class => "btn btn-default" %>
+<%= link_to 'Destruir', @summary_attendance, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger" %>
+<%= link_to 'Volver', summary_attendances_path, :class => "btn btn-link" %>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>

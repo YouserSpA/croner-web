@@ -1,0 +1,1 @@
+json.extract! @summary_attendance, :id, :attendace_date, :check_in_at, :check_out_at, :worked_hours, :contracted_hours, :difference, :delay, :permission, :medical_licence, :employee_id, :branch_office_id, :created_at, :updated_at
