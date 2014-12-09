@@ -1,8 +1,11 @@
 <%# add navigation links to this file %>
 <ul class="nav navbar-nav">
-	<li><%= link_to 'Croner', root_path, class: 'navbar-brand' %></li>
-	<li><%= link_to 'Ofertas', '#' %></li>
-	<li><%= link_to 'Contacto', '#' %></li>
+	<li class="logo">
+		<a href="/">
+			<img src="/img/cronerBlanco-02.png" alt="">
+		</a>
+	<!-- <li><%= link_to 'Ofertas', '#' %></li>
+	<li><%= link_to 'Contacto', '#' %></li> -->
 </ul>
 
 <ul class="nav navbar-nav pull-right">
@@ -10,7 +13,10 @@
 	  <li><%= link_to 'Edit account', edit_user_registration_path %></li>
 	  <li><%= link_to 'Sign out', destroy_user_session_path, :method=> :delete %></li>
 	<% else %>
-	  <li><%= link_to 'Sign in', new_user_session_path %></li>
-	  <li><%= link_to 'Sign up', new_user_registration_path %></li>
+	  <li>
+	  	<div>
+	  	<a href="/users/sign_in" class="btn btn-success">Ingresar</a>
+	  	</div>
+	  </li>
 	<% end %>
 </ul>
