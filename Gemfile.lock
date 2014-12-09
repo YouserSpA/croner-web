@@ -100,12 +100,15 @@ GEM
     ref (1.0.5)
     rename (1.0.2)
       rails (>= 3.0.0)
+    ruby-ole (1.2.11.7)
     sdoc (0.4.0)
       json (~> 1.8)
       rdoc (~> 4.0, < 5.0)
     seed_dump (3.2.0)
       activerecord (~> 4)
       activesupport (~> 4)
+    spreadsheet (1.0.0)
+      ruby-ole (>= 1.0)
     sprockets (2.10.1)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -151,6 +154,7 @@ DEPENDENCIES
   rename
   sdoc
   seed_dump
+  spreadsheet
   therubyracer
   time_diff
   turbolinks

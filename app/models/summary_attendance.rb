@@ -5,6 +5,7 @@ class SummaryAttendance < ActiveRecord::Base
 
 	  		belongs_to :employee
 	  		belongs_to :branch_office
+	  		belongs_to :customer
 		
 	# Validations
 			# validates :attendace_date, <validations>

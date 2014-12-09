@@ -5,6 +5,7 @@ class Customer < ActiveRecord::Base
 
 	has_many :employees
 	has_many :branch_offices
+	has_many :summary_attendances
 		
 	# Validations
 			validates :name, presence: true

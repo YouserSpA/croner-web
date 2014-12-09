@@ -1,7 +1,8 @@
 CronerWebApp::Application.routes.draw do
 
   resources :summary_attendances
-  get '/generating_summaries', to: 'summary_attendances#generating_summaries'
+  get '/generate_summaries', to: 'summary_attendances#generate_summaries'
+  get '/export_summaries', to: 'summary_attendances#export_summaries'
   
   resources :branch_offices
 
